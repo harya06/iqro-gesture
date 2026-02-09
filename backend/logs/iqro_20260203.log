@@ -1,0 +1,1852 @@
+2026-02-03 01:20:54 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 01:20:54 - iqro - INFO - Using dummy inference: True
+2026-02-03 01:22:27 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 01:22:27 - iqro - INFO - Using dummy inference: True
+2026-02-03 01:26:26 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 01:26:26 - iqro - INFO - Using dummy inference: True
+2026-02-03 01:26:26 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 01:26:26 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 01:26:26 - iqro - INFO - Database initialized
+2026-02-03 01:26:26 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 01:26:26 - iqro - INFO - Generating TTS audio for: Alif (أَلِف)
+2026-02-03 01:26:26 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/6985712ad9d53c6f04ef7c8c516e83e4.mp3
+2026-02-03 01:26:26 - iqro - INFO - Generating TTS audio for: Ba (بَا)
+2026-02-03 01:26:27 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/217ecdf74168698acf6e78b8c5322c1d.mp3
+2026-02-03 01:26:27 - iqro - INFO - Generating TTS audio for: Ta (تَا)
+2026-02-03 01:26:27 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/8ae758d0b7c93e1d1055b084868ce77b.mp3
+2026-02-03 01:26:27 - iqro - INFO - Generating TTS audio for: Tsa (ثَا)
+2026-02-03 01:26:27 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/850dc29c9b581bbda0ea76b3ea68eb2e.mp3
+2026-02-03 01:26:27 - iqro - INFO - Generating TTS audio for: Jim (جِيم)
+2026-02-03 01:26:28 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/15f8660c1c250dc98cefe8927f497384.mp3
+2026-02-03 01:26:28 - iqro - INFO - TTS pre-generation complete
+2026-02-03 01:26:28 - iqro - INFO - Application startup complete
+2026-02-03 02:02:24 - iqro - INFO - Client connected: session_79c4b3mh1kaml5je6vr
+2026-02-03 02:02:24 - iqro - ERROR - Error sending message to session_79c4b3mh1kaml5je6vr: 
+2026-02-03 02:02:24 - iqro - ERROR - WebSocket error for session_79c4b3mh1kaml5je6vr: WebSocket is not connected. Need to call "accept" first.
+2026-02-03 02:02:24 - iqro - INFO - Client disconnected: session_79c4b3mh1kaml5je6vr
+2026-02-03 02:02:24 - iqro - INFO - Client connected: session_79c4b3mh1kaml5je6vr
+2026-02-03 02:02:24 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_79c4b3mh1kaml5je6vr', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:03:48 - iqro - INFO - Client session_79c4b3mh1kaml5je6vr disconnected
+2026-02-03 02:03:48 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_79c4b3mh1kaml5je6vr', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:03:48 - iqro - INFO - Client disconnected: session_79c4b3mh1kaml5je6vr
+2026-02-03 02:04:40 - iqro - INFO - Client connected: session_7u6dnmlb91mml5jh3oo
+2026-02-03 02:04:40 - iqro - INFO - Client session_7u6dnmlb91mml5jh3oo disconnected
+2026-02-03 02:04:40 - iqro - INFO - Client disconnected: session_7u6dnmlb91mml5jh3oo
+2026-02-03 02:04:40 - iqro - INFO - Client connected: session_7u6dnmlb91mml5jh3oo
+2026-02-03 02:04:40 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_7u6dnmlb91mml5jh3oo', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:04:47 - iqro - INFO - Client session_7u6dnmlb91mml5jh3oo disconnected
+2026-02-03 02:04:47 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_7u6dnmlb91mml5jh3oo', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:04:47 - iqro - INFO - Client disconnected: session_7u6dnmlb91mml5jh3oo
+2026-02-03 02:04:47 - iqro - INFO - Client connected: session_9pzs36eg3kdml5jh96l
+2026-02-03 02:04:47 - iqro - INFO - Client session_9pzs36eg3kdml5jh96l disconnected
+2026-02-03 02:04:47 - iqro - INFO - Client disconnected: session_9pzs36eg3kdml5jh96l
+2026-02-03 02:04:47 - iqro - INFO - Client connected: session_9pzs36eg3kdml5jh96l
+2026-02-03 02:04:47 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_9pzs36eg3kdml5jh96l', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:04:48 - iqro - INFO - Client session_9pzs36eg3kdml5jh96l disconnected
+2026-02-03 02:04:48 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_9pzs36eg3kdml5jh96l', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:04:48 - iqro - INFO - Client disconnected: session_9pzs36eg3kdml5jh96l
+2026-02-03 02:04:48 - iqro - INFO - Client connected: session_alcn5yjuucml5jh9vv
+2026-02-03 02:04:48 - iqro - INFO - Client session_alcn5yjuucml5jh9vv disconnected
+2026-02-03 02:04:48 - iqro - INFO - Client disconnected: session_alcn5yjuucml5jh9vv
+2026-02-03 02:04:48 - iqro - INFO - Client connected: session_alcn5yjuucml5jh9vv
+2026-02-03 02:04:48 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_alcn5yjuucml5jh9vv', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:04:52 - iqro - INFO - Client session_alcn5yjuucml5jh9vv disconnected
+2026-02-03 02:04:52 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_alcn5yjuucml5jh9vv', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:04:52 - iqro - INFO - Client disconnected: session_alcn5yjuucml5jh9vv
+2026-02-03 02:05:08 - iqro - INFO - Shutting down application...
+2026-02-03 02:05:22 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 02:05:22 - iqro - INFO - Using dummy inference: True
+2026-02-03 02:05:23 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 02:05:23 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 02:05:23 - iqro - INFO - Database initialized
+2026-02-03 02:05:23 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 02:05:23 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 02:05:23 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 02:05:23 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 02:05:23 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 02:05:23 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 02:05:23 - iqro - INFO - TTS pre-generation complete
+2026-02-03 02:05:23 - iqro - INFO - Application startup complete
+2026-02-03 02:05:47 - iqro - INFO - Client connected: session_z04m0oe2e0sml5jijd3
+2026-02-03 02:05:47 - iqro - ERROR - Error sending message to session_z04m0oe2e0sml5jijd3: 
+2026-02-03 02:05:47 - iqro - ERROR - WebSocket error for session_z04m0oe2e0sml5jijd3: WebSocket is not connected. Need to call "accept" first.
+2026-02-03 02:05:47 - iqro - INFO - Client disconnected: session_z04m0oe2e0sml5jijd3
+2026-02-03 02:05:47 - iqro - INFO - Client connected: session_z04m0oe2e0sml5jijd3
+2026-02-03 02:05:47 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_z04m0oe2e0sml5jijd3', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:11:16 - iqro - INFO - Client session_z04m0oe2e0sml5jijd3 disconnected
+2026-02-03 02:11:16 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_z04m0oe2e0sml5jijd3', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:11:16 - iqro - INFO - Client disconnected: session_z04m0oe2e0sml5jijd3
+2026-02-03 02:11:16 - iqro - INFO - Client connected: session_7cwcgia2mbml5jplfc
+2026-02-03 02:11:16 - iqro - INFO - Client session_7cwcgia2mbml5jplfc disconnected
+2026-02-03 02:11:16 - iqro - INFO - Client disconnected: session_7cwcgia2mbml5jplfc
+2026-02-03 02:11:16 - iqro - INFO - Client connected: session_7cwcgia2mbml5jplfc
+2026-02-03 02:11:16 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_7cwcgia2mbml5jplfc', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:15:21 - iqro - INFO - Client session_7cwcgia2mbml5jplfc disconnected
+2026-02-03 02:15:21 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_7cwcgia2mbml5jplfc', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:15:21 - iqro - INFO - Client disconnected: session_7cwcgia2mbml5jplfc
+2026-02-03 02:17:42 - iqro - INFO - Client connected: session_4hv0lmjg7yxml5jxur4
+2026-02-03 02:17:42 - iqro - INFO - Client connected: session_4hv0lmjg7yxml5jxur4
+2026-02-03 02:17:42 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_4hv0lmjg7yxml5jxur4', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:17:42 - iqro - INFO - Client session_4hv0lmjg7yxml5jxur4 disconnected
+2026-02-03 02:17:42 - iqro - INFO - Client disconnected: session_4hv0lmjg7yxml5jxur4
+2026-02-03 02:17:50 - iqro - INFO - Client session_4hv0lmjg7yxml5jxur4 disconnected
+2026-02-03 02:17:50 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_4hv0lmjg7yxml5jxur4', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:17:50 - iqro - INFO - Client disconnected: session_4hv0lmjg7yxml5jxur4
+2026-02-03 02:17:50 - iqro - INFO - Client connected: session_fg6ebnbkr4sml5jy1di
+2026-02-03 02:17:50 - iqro - INFO - Client connected: session_fg6ebnbkr4sml5jy1di
+2026-02-03 02:17:50 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_fg6ebnbkr4sml5jy1di', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:17:50 - iqro - INFO - Client session_fg6ebnbkr4sml5jy1di disconnected
+2026-02-03 02:17:50 - iqro - INFO - Client disconnected: session_fg6ebnbkr4sml5jy1di
+2026-02-03 02:17:51 - iqro - INFO - Client session_fg6ebnbkr4sml5jy1di disconnected
+2026-02-03 02:17:51 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_fg6ebnbkr4sml5jy1di', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:17:51 - iqro - INFO - Client disconnected: session_fg6ebnbkr4sml5jy1di
+2026-02-03 02:17:51 - iqro - INFO - Client connected: session_y7jrpla0429ml5jy1ix
+2026-02-03 02:17:51 - iqro - INFO - Client session_y7jrpla0429ml5jy1ix disconnected
+2026-02-03 02:17:51 - iqro - INFO - Client disconnected: session_y7jrpla0429ml5jy1ix
+2026-02-03 02:17:51 - iqro - INFO - Client connected: session_y7jrpla0429ml5jy1ix
+2026-02-03 02:17:51 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_y7jrpla0429ml5jy1ix', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:17:51 - iqro - INFO - Client session_y7jrpla0429ml5jy1ix disconnected
+2026-02-03 02:17:51 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_y7jrpla0429ml5jy1ix', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:17:51 - iqro - INFO - Client disconnected: session_y7jrpla0429ml5jy1ix
+2026-02-03 02:17:51 - iqro - INFO - Client connected: session_4j1t26cw1h8ml5jy208
+2026-02-03 02:17:51 - iqro - INFO - Client session_4j1t26cw1h8ml5jy208 disconnected
+2026-02-03 02:17:51 - iqro - INFO - Client disconnected: session_4j1t26cw1h8ml5jy208
+2026-02-03 02:17:51 - iqro - INFO - Client connected: session_4j1t26cw1h8ml5jy208
+2026-02-03 02:17:51 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_4j1t26cw1h8ml5jy208', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:17:59 - iqro - INFO - Client session_4j1t26cw1h8ml5jy208 disconnected
+2026-02-03 02:17:59 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_4j1t26cw1h8ml5jy208', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:17:59 - iqro - INFO - Client disconnected: session_4j1t26cw1h8ml5jy208
+2026-02-03 02:17:59 - iqro - INFO - Shutting down application...
+2026-02-03 02:18:05 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 02:18:05 - iqro - INFO - Using dummy inference: True
+2026-02-03 02:18:05 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 02:18:05 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 02:18:05 - iqro - INFO - Database initialized
+2026-02-03 02:18:05 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 02:18:05 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 02:18:05 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 02:18:05 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 02:18:05 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 02:18:05 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 02:18:05 - iqro - INFO - TTS pre-generation complete
+2026-02-03 02:18:05 - iqro - INFO - Application startup complete
+2026-02-03 02:18:05 - iqro - INFO - Client connected: session_4j1t26cw1h8ml5jy208
+2026-02-03 02:18:05 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_4j1t26cw1h8ml5jy208', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:18:09 - iqro - INFO - Client session_4j1t26cw1h8ml5jy208 disconnected
+2026-02-03 02:18:09 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_4j1t26cw1h8ml5jy208', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:18:09 - iqro - INFO - Client disconnected: session_4j1t26cw1h8ml5jy208
+2026-02-03 02:18:09 - iqro - INFO - Client connected: session_7xr9hj8nouhml5jyg54
+2026-02-03 02:18:09 - iqro - INFO - Client session_7xr9hj8nouhml5jyg54 disconnected
+2026-02-03 02:18:10 - iqro - INFO - Client disconnected: session_7xr9hj8nouhml5jyg54
+2026-02-03 02:18:10 - iqro - INFO - Client connected: session_7xr9hj8nouhml5jyg54
+2026-02-03 02:18:10 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_7xr9hj8nouhml5jyg54', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:18:12 - iqro - INFO - Client session_7xr9hj8nouhml5jyg54 disconnected
+2026-02-03 02:18:12 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_7xr9hj8nouhml5jyg54', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:18:12 - iqro - INFO - Client disconnected: session_7xr9hj8nouhml5jyg54
+2026-02-03 02:18:12 - iqro - INFO - Client connected: session_wv5aredndpgml5jyhxh
+2026-02-03 02:18:12 - iqro - INFO - Client session_wv5aredndpgml5jyhxh disconnected
+2026-02-03 02:18:12 - iqro - INFO - Client disconnected: session_wv5aredndpgml5jyhxh
+2026-02-03 02:18:12 - iqro - INFO - Client connected: session_wv5aredndpgml5jyhxh
+2026-02-03 02:18:12 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_wv5aredndpgml5jyhxh', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:18:14 - iqro - INFO - Client session_wv5aredndpgml5jyhxh disconnected
+2026-02-03 02:18:14 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_wv5aredndpgml5jyhxh', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:18:14 - iqro - INFO - Client disconnected: session_wv5aredndpgml5jyhxh
+2026-02-03 02:18:14 - iqro - INFO - Client connected: session_95984qpienml5jyjfc
+2026-02-03 02:18:14 - iqro - INFO - Client session_95984qpienml5jyjfc disconnected
+2026-02-03 02:18:14 - iqro - INFO - Client disconnected: session_95984qpienml5jyjfc
+2026-02-03 02:18:14 - iqro - INFO - Client connected: session_95984qpienml5jyjfc
+2026-02-03 02:18:14 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_95984qpienml5jyjfc', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:19:49 - iqro - INFO - Client session_95984qpienml5jyjfc disconnected
+2026-02-03 02:19:49 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_95984qpienml5jyjfc', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:19:49 - iqro - INFO - Client disconnected: session_95984qpienml5jyjfc
+2026-02-03 02:19:49 - iqro - INFO - Shutting down application...
+2026-02-03 02:19:54 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 02:19:54 - iqro - INFO - Using dummy inference: True
+2026-02-03 02:19:54 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 02:19:54 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 02:19:54 - iqro - INFO - Database initialized
+2026-02-03 02:19:54 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 02:19:54 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 02:19:54 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 02:19:54 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 02:19:54 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 02:19:54 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 02:19:54 - iqro - INFO - TTS pre-generation complete
+2026-02-03 02:19:54 - iqro - INFO - Application startup complete
+2026-02-03 02:19:55 - iqro - INFO - Client connected: session_95984qpienml5jyjfc
+2026-02-03 02:19:55 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_95984qpienml5jyjfc', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:19:59 - iqro - INFO - Client session_95984qpienml5jyjfc disconnected
+2026-02-03 02:19:59 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_95984qpienml5jyjfc', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:19:59 - iqro - INFO - Client disconnected: session_95984qpienml5jyjfc
+2026-02-03 02:20:00 - iqro - INFO - Client connected: session_o70zskfb3oml5k0t3n
+2026-02-03 02:20:00 - iqro - INFO - Client session_o70zskfb3oml5k0t3n disconnected
+2026-02-03 02:20:00 - iqro - INFO - Client disconnected: session_o70zskfb3oml5k0t3n
+2026-02-03 02:20:00 - iqro - INFO - Client connected: session_o70zskfb3oml5k0t3n
+2026-02-03 02:20:00 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_o70zskfb3oml5k0t3n', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:20:04 - iqro - INFO - Client session_o70zskfb3oml5k0t3n disconnected
+2026-02-03 02:20:04 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_o70zskfb3oml5k0t3n', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:20:04 - iqro - INFO - Client disconnected: session_o70zskfb3oml5k0t3n
+2026-02-03 02:20:04 - iqro - INFO - Client connected: session_ibyocp3jtsgml5k0wrc
+2026-02-03 02:20:04 - iqro - INFO - Client session_ibyocp3jtsgml5k0wrc disconnected
+2026-02-03 02:20:04 - iqro - INFO - Client disconnected: session_ibyocp3jtsgml5k0wrc
+2026-02-03 02:20:04 - iqro - INFO - Client connected: session_ibyocp3jtsgml5k0wrc
+2026-02-03 02:20:04 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_ibyocp3jtsgml5k0wrc', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:20:18 - iqro - INFO - Client session_ibyocp3jtsgml5k0wrc disconnected
+2026-02-03 02:20:18 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_ibyocp3jtsgml5k0wrc', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:20:18 - iqro - INFO - Client disconnected: session_ibyocp3jtsgml5k0wrc
+2026-02-03 02:20:18 - iqro - INFO - Shutting down application...
+2026-02-03 02:20:23 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 02:20:23 - iqro - INFO - Using dummy inference: True
+2026-02-03 02:20:23 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 02:20:23 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 02:20:23 - iqro - INFO - Database initialized
+2026-02-03 02:20:23 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 02:20:23 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 02:20:23 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 02:20:23 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 02:20:23 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 02:20:23 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 02:20:23 - iqro - INFO - TTS pre-generation complete
+2026-02-03 02:20:23 - iqro - INFO - Application startup complete
+2026-02-03 02:20:24 - iqro - INFO - Client connected: session_ibyocp3jtsgml5k0wrc
+2026-02-03 02:20:24 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_ibyocp3jtsgml5k0wrc', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:20:27 - iqro - INFO - Client session_ibyocp3jtsgml5k0wrc disconnected
+2026-02-03 02:20:27 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_ibyocp3jtsgml5k0wrc', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:20:27 - iqro - INFO - Client disconnected: session_ibyocp3jtsgml5k0wrc
+2026-02-03 02:20:27 - iqro - INFO - Client connected: session_rfabd1v14uml5k1e2t
+2026-02-03 02:20:27 - iqro - INFO - Client session_rfabd1v14uml5k1e2t disconnected
+2026-02-03 02:20:27 - iqro - INFO - Client disconnected: session_rfabd1v14uml5k1e2t
+2026-02-03 02:20:27 - iqro - INFO - Client connected: session_rfabd1v14uml5k1e2t
+2026-02-03 02:20:27 - iqro - ERROR - Error logging session start: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_rfabd1v14uml5k1e2t', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-02-03 02:23:15 - iqro - INFO - Client session_rfabd1v14uml5k1e2t disconnected
+2026-02-03 02:23:15 - iqro - ERROR - Error updating session log: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (sqlite3.IntegrityError) UNIQUE constraint failed: session_logs.session_id
+[SQL: INSERT INTO session_logs (session_id, end_time, total_predictions, client_info) VALUES (?, ?, ?, ?) RETURNING id, start_time]
+[parameters: ('session_rfabd1v14uml5k1e2t', None, 0, '{"user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"}')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) (Background on this error at: https://sqlalche.me/e/20/7s2a)
+2026-02-03 02:23:15 - iqro - INFO - Client disconnected: session_rfabd1v14uml5k1e2t
+2026-02-03 02:23:15 - iqro - INFO - Shutting down application...
+2026-02-03 02:23:16 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 02:23:16 - iqro - INFO - Using dummy inference: True
+2026-02-03 02:23:16 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 02:23:16 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 02:23:16 - iqro - INFO - Database initialized
+2026-02-03 02:23:16 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 02:23:16 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 02:23:16 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 02:23:16 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 02:23:16 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 02:23:16 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 02:23:16 - iqro - INFO - TTS pre-generation complete
+2026-02-03 02:23:16 - iqro - INFO - Application startup complete
+2026-02-03 02:23:17 - iqro - INFO - Client connected: session_rfabd1v14uml5k1e2t
+2026-02-03 02:23:19 - iqro - INFO - Client session_rfabd1v14uml5k1e2t disconnected
+2026-02-03 02:23:19 - iqro - INFO - Client disconnected: session_rfabd1v14uml5k1e2t
+2026-02-03 02:23:19 - iqro - INFO - Shutting down application...
+2026-02-03 02:23:20 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 02:23:20 - iqro - INFO - Using dummy inference: True
+2026-02-03 02:23:20 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 02:23:20 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 02:23:20 - iqro - INFO - Database initialized
+2026-02-03 02:23:20 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 02:23:20 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 02:23:20 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 02:23:20 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 02:23:20 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 02:23:20 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 02:23:20 - iqro - INFO - TTS pre-generation complete
+2026-02-03 02:23:20 - iqro - INFO - Application startup complete
+2026-02-03 02:23:22 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 02:23:22 - iqro - INFO - Using dummy inference: True
+2026-02-03 02:23:22 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 02:23:22 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 02:23:22 - iqro - INFO - Database initialized
+2026-02-03 02:23:22 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 02:23:22 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 02:23:22 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 02:23:22 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 02:23:22 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 02:23:22 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 02:23:22 - iqro - INFO - TTS pre-generation complete
+2026-02-03 02:23:22 - iqro - INFO - Application startup complete
+2026-02-03 02:23:22 - iqro - INFO - Client connected: session_rfabd1v14uml5k1e2t
+2026-02-03 02:23:26 - iqro - INFO - Client session_rfabd1v14uml5k1e2t disconnected
+2026-02-03 02:23:26 - iqro - INFO - Client disconnected: session_rfabd1v14uml5k1e2t
+2026-02-03 02:23:26 - iqro - INFO - Shutting down application...
+2026-02-03 02:23:31 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 02:23:31 - iqro - INFO - Using dummy inference: True
+2026-02-03 02:23:31 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 02:23:31 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 02:23:31 - iqro - INFO - Database initialized
+2026-02-03 02:23:31 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 02:23:31 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 02:23:31 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 02:23:31 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 02:23:31 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 02:23:31 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 02:23:31 - iqro - INFO - TTS pre-generation complete
+2026-02-03 02:23:31 - iqro - INFO - Application startup complete
+2026-02-03 02:23:33 - iqro - INFO - Client connected: session_rfabd1v14uml5k1e2t
+2026-02-03 02:23:37 - iqro - INFO - Client session_rfabd1v14uml5k1e2t disconnected
+2026-02-03 02:23:37 - iqro - INFO - Client disconnected: session_rfabd1v14uml5k1e2t
+2026-02-03 02:23:38 - iqro - INFO - Client connected: session_ctxsa0ra9r6ml5k5hbf
+2026-02-03 02:23:38 - iqro - INFO - Client session_ctxsa0ra9r6ml5k5hbf disconnected
+2026-02-03 02:23:38 - iqro - INFO - Client disconnected: session_ctxsa0ra9r6ml5k5hbf
+2026-02-03 02:23:38 - iqro - INFO - Client connected: session_ctxsa0ra9r6ml5k5hbf
+2026-02-03 02:23:40 - iqro - INFO - Client session_ctxsa0ra9r6ml5k5hbf disconnected
+2026-02-03 02:23:40 - iqro - INFO - Client disconnected: session_ctxsa0ra9r6ml5k5hbf
+2026-02-03 02:23:41 - iqro - INFO - Client connected: session_gqek4ffqxnbml5k5jkx
+2026-02-03 02:23:41 - iqro - INFO - Client session_gqek4ffqxnbml5k5jkx disconnected
+2026-02-03 02:23:41 - iqro - INFO - Client disconnected: session_gqek4ffqxnbml5k5jkx
+2026-02-03 02:23:41 - iqro - INFO - Client connected: session_gqek4ffqxnbml5k5jkx
+2026-02-03 02:30:40 - iqro - INFO - Client session_gqek4ffqxnbml5k5jkx disconnected
+2026-02-03 02:30:40 - iqro - INFO - Client disconnected: session_gqek4ffqxnbml5k5jkx
+2026-02-03 02:30:40 - iqro - INFO - Shutting down application...
+2026-02-03 02:30:42 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 02:30:42 - iqro - INFO - Using dummy inference: True
+2026-02-03 02:30:42 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 02:30:42 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 02:30:42 - iqro - INFO - Database initialized
+2026-02-03 02:30:42 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 02:30:42 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 02:30:42 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 02:30:42 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 02:30:42 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 02:30:42 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 02:30:42 - iqro - INFO - TTS pre-generation complete
+2026-02-03 02:30:42 - iqro - INFO - Application startup complete
+2026-02-03 02:30:42 - iqro - INFO - Client connected: session_gqek4ffqxnbml5k5jkx
+2026-02-03 02:30:42 - iqro - INFO - Session already exists: session_gqek4ffqxnbml5k5jkx
+2026-02-03 02:31:31 - iqro - INFO - Client session_gqek4ffqxnbml5k5jkx disconnected
+2026-02-03 02:31:31 - iqro - INFO - Client disconnected: session_gqek4ffqxnbml5k5jkx
+2026-02-03 02:31:31 - iqro - INFO - Shutting down application...
+2026-02-03 02:31:33 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 02:31:33 - iqro - INFO - Using dummy inference: True
+2026-02-03 02:31:33 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 02:31:33 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 02:31:33 - iqro - INFO - Database initialized
+2026-02-03 02:31:33 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 02:31:33 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 02:31:33 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 02:31:33 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 02:31:33 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 02:31:33 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 02:31:33 - iqro - INFO - TTS pre-generation complete
+2026-02-03 02:31:33 - iqro - INFO - Application startup complete
+2026-02-03 02:31:33 - iqro - INFO - Client connected: session_gqek4ffqxnbml5k5jkx
+2026-02-03 02:31:33 - iqro - INFO - Session already exists: session_gqek4ffqxnbml5k5jkx
+2026-02-03 02:31:42 - iqro - INFO - Client session_gqek4ffqxnbml5k5jkx disconnected
+2026-02-03 02:31:42 - iqro - INFO - Client disconnected: session_gqek4ffqxnbml5k5jkx
+2026-02-03 02:31:42 - iqro - INFO - Shutting down application...
+2026-02-03 02:31:43 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 02:31:43 - iqro - INFO - Using dummy inference: True
+2026-02-03 02:31:44 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 02:31:44 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 02:31:44 - iqro - INFO - Database initialized
+2026-02-03 02:31:44 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 02:31:44 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 02:31:44 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 02:31:44 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 02:31:44 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 02:31:44 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 02:31:44 - iqro - INFO - TTS pre-generation complete
+2026-02-03 02:31:44 - iqro - INFO - Application startup complete
+2026-02-03 02:31:45 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 02:31:45 - iqro - INFO - Using dummy inference: True
+2026-02-03 02:31:45 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 02:31:45 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 02:31:45 - iqro - INFO - Database initialized
+2026-02-03 02:31:45 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 02:31:45 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 02:31:45 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 02:31:45 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 02:31:45 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 02:31:45 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 02:31:45 - iqro - INFO - TTS pre-generation complete
+2026-02-03 02:31:45 - iqro - INFO - Application startup complete
+2026-02-03 02:31:45 - iqro - INFO - Client connected: session_gqek4ffqxnbml5k5jkx
+2026-02-03 02:31:45 - iqro - INFO - Session already exists: session_gqek4ffqxnbml5k5jkx
+2026-02-03 02:31:51 - iqro - INFO - Client session_gqek4ffqxnbml5k5jkx disconnected
+2026-02-03 02:31:51 - iqro - INFO - Client disconnected: session_gqek4ffqxnbml5k5jkx
+2026-02-03 02:31:52 - iqro - INFO - Client connected: session_rmsu4d0ktlfml5kg2f3
+2026-02-03 02:31:52 - iqro - INFO - Client session_rmsu4d0ktlfml5kg2f3 disconnected
+2026-02-03 02:31:52 - iqro - INFO - Client disconnected: session_rmsu4d0ktlfml5kg2f3
+2026-02-03 02:31:52 - iqro - INFO - Client connected: session_rmsu4d0ktlfml5kg2f3
+2026-02-03 02:31:52 - iqro - INFO - Session already exists: session_rmsu4d0ktlfml5kg2f3
+2026-02-03 02:31:57 - iqro - INFO - Client session_rmsu4d0ktlfml5kg2f3 disconnected
+2026-02-03 02:31:57 - iqro - INFO - Client disconnected: session_rmsu4d0ktlfml5kg2f3
+2026-02-03 02:31:57 - iqro - INFO - Shutting down application...
+2026-02-03 02:32:02 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 02:32:02 - iqro - INFO - Using dummy inference: True
+2026-02-03 02:32:02 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 02:32:02 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 02:32:02 - iqro - INFO - Database initialized
+2026-02-03 02:32:02 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 02:32:02 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 02:32:02 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 02:32:02 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 02:32:02 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 02:32:02 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 02:32:02 - iqro - INFO - TTS pre-generation complete
+2026-02-03 02:32:02 - iqro - INFO - Application startup complete
+2026-02-03 02:32:03 - iqro - INFO - Client connected: session_6kqhfg0hvvpml5kgbd9
+2026-02-03 02:32:03 - iqro - INFO - Client session_6kqhfg0hvvpml5kgbd9 disconnected
+2026-02-03 02:32:03 - iqro - INFO - Client disconnected: session_6kqhfg0hvvpml5kgbd9
+2026-02-03 02:32:03 - iqro - INFO - Client connected: session_6kqhfg0hvvpml5kgbd9
+2026-02-03 02:32:03 - iqro - INFO - Session already exists: session_6kqhfg0hvvpml5kgbd9
+2026-02-03 02:32:30 - iqro - INFO - Client session_6kqhfg0hvvpml5kgbd9 disconnected
+2026-02-03 02:32:30 - iqro - INFO - Client disconnected: session_6kqhfg0hvvpml5kgbd9
+2026-02-03 02:32:30 - iqro - INFO - Shutting down application...
+2026-02-03 15:55:20 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 15:55:20 - iqro - INFO - Using dummy inference: True
+2026-02-03 15:55:20 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 15:55:20 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 15:55:20 - iqro - INFO - Database initialized
+2026-02-03 15:55:20 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 15:55:20 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 15:55:20 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 15:55:20 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 15:55:20 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 15:55:20 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 15:55:20 - iqro - INFO - TTS pre-generation complete
+2026-02-03 15:55:20 - iqro - INFO - Application startup complete
+2026-02-03 15:56:04 - iqro - INFO - Client connected: session_byd1mihni8ml6d6a7x
+2026-02-03 15:56:04 - iqro - INFO - Client connected: session_byd1mihni8ml6d6a7x
+2026-02-03 15:56:04 - iqro - INFO - Session already exists: session_byd1mihni8ml6d6a7x
+2026-02-03 15:56:04 - iqro - INFO - Client session_byd1mihni8ml6d6a7x disconnected
+2026-02-03 15:56:04 - iqro - INFO - Client disconnected: session_byd1mihni8ml6d6a7x
+2026-02-03 15:59:33 - iqro - INFO - Client session_byd1mihni8ml6d6a7x disconnected
+2026-02-03 15:59:33 - iqro - INFO - Client disconnected: session_byd1mihni8ml6d6a7x
+2026-02-03 15:59:36 - iqro - INFO - Client connected: session_dvzkh0zuyoml6datw3
+2026-02-03 15:59:37 - iqro - INFO - Client session_dvzkh0zuyoml6datw3 disconnected
+2026-02-03 15:59:37 - iqro - INFO - Client disconnected: session_dvzkh0zuyoml6datw3
+2026-02-03 15:59:37 - iqro - INFO - Client connected: session_07anqfkegh87ml6dauok
+2026-02-03 15:59:40 - iqro - INFO - Client session_07anqfkegh87ml6dauok disconnected
+2026-02-03 15:59:40 - iqro - INFO - Client disconnected: session_07anqfkegh87ml6dauok
+2026-02-03 15:59:42 - iqro - INFO - Client connected: session_gh78u7nnmmcml6dayj9
+2026-02-03 15:59:43 - iqro - INFO - Client session_gh78u7nnmmcml6dayj9 disconnected
+2026-02-03 15:59:43 - iqro - INFO - Client disconnected: session_gh78u7nnmmcml6dayj9
+2026-02-03 15:59:43 - iqro - INFO - Client connected: session_4y40xu0frmml6dazas
+2026-02-03 15:59:56 - iqro - INFO - Client session_4y40xu0frmml6dazas disconnected
+2026-02-03 15:59:56 - iqro - INFO - Client disconnected: session_4y40xu0frmml6dazas
+2026-02-03 15:59:56 - iqro - INFO - Shutting down application...
+2026-02-03 16:00:00 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 16:00:00 - iqro - INFO - Using dummy inference: True
+2026-02-03 16:00:00 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 16:00:00 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 16:00:00 - iqro - INFO - Database initialized
+2026-02-03 16:00:00 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 16:00:00 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 16:00:00 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 16:00:00 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 16:00:00 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 16:00:00 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 16:00:00 - iqro - INFO - TTS pre-generation complete
+2026-02-03 16:00:00 - iqro - INFO - Application startup complete
+2026-02-03 16:00:01 - iqro - INFO - Client connected: session_v79v2skl3jml6dbd5n
+2026-02-03 16:00:06 - iqro - INFO - Client session_v79v2skl3jml6dbd5n disconnected
+2026-02-03 16:00:07 - iqro - INFO - Client disconnected: session_v79v2skl3jml6dbd5n
+2026-02-03 16:00:07 - iqro - INFO - Client connected: session_y31xq06d1boml6dbhf1
+2026-02-03 16:00:21 - iqro - INFO - Client session_y31xq06d1boml6dbhf1 disconnected
+2026-02-03 16:00:21 - iqro - INFO - Client disconnected: session_y31xq06d1boml6dbhf1
+2026-02-03 16:00:21 - iqro - INFO - Client connected: session_1zmgedcz6bsml6dbsu0
+2026-02-03 16:01:02 - iqro - INFO - Client session_1zmgedcz6bsml6dbsu0 disconnected
+2026-02-03 16:01:02 - iqro - INFO - Client disconnected: session_1zmgedcz6bsml6dbsu0
+2026-02-03 16:01:02 - iqro - INFO - Shutting down application...
+2026-02-03 16:01:09 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 16:01:09 - iqro - INFO - Using dummy inference: True
+2026-02-03 16:01:09 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 16:01:09 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 16:01:09 - iqro - INFO - Database initialized
+2026-02-03 16:01:09 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 16:01:09 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 16:01:09 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 16:01:09 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 16:01:09 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 16:01:09 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 16:01:09 - iqro - INFO - TTS pre-generation complete
+2026-02-03 16:01:09 - iqro - INFO - Application startup complete
+2026-02-03 16:01:16 - iqro - INFO - Client connected: session_1zmgedcz6bsml6dbsu0
+2026-02-03 16:01:16 - iqro - INFO - Session already exists: session_1zmgedcz6bsml6dbsu0
+2026-02-03 16:01:17 - iqro - INFO - Client session_1zmgedcz6bsml6dbsu0 disconnected
+2026-02-03 16:01:17 - iqro - INFO - Client disconnected: session_1zmgedcz6bsml6dbsu0
+2026-02-03 16:01:17 - iqro - INFO - Client connected: session_7qjm2mib90hml6dczr2
+2026-02-03 16:01:20 - iqro - INFO - Client session_7qjm2mib90hml6dczr2 disconnected
+2026-02-03 16:01:20 - iqro - INFO - Client disconnected: session_7qjm2mib90hml6dczr2
+2026-02-03 16:01:20 - iqro - INFO - Client connected: session_owy3b1q5wtml6dd20o
+2026-02-03 16:06:27 - iqro - INFO - Client session_owy3b1q5wtml6dd20o disconnected
+2026-02-03 16:06:27 - iqro - INFO - Client disconnected: session_owy3b1q5wtml6dd20o
+2026-02-03 16:06:27 - iqro - INFO - Shutting down application...
+2026-02-03 16:26:39 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 16:26:39 - iqro - INFO - Using dummy inference: True
+2026-02-03 16:26:39 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 16:26:39 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 16:26:39 - iqro - INFO - Database initialized
+2026-02-03 16:26:39 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 16:26:39 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 16:26:39 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 16:26:39 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 16:26:39 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 16:26:39 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 16:26:39 - iqro - INFO - TTS pre-generation complete
+2026-02-03 16:26:39 - iqro - INFO - Application startup complete
+2026-02-03 16:26:50 - iqro - INFO - Client connected: session_rigdjrmtb2cml6e9uz4
+2026-02-03 16:31:30 - iqro - INFO - Client session_rigdjrmtb2cml6e9uz4 disconnected
+2026-02-03 16:31:30 - iqro - INFO - Client disconnected: session_rigdjrmtb2cml6e9uz4
+2026-02-03 16:31:30 - iqro - INFO - Shutting down application...
+2026-02-03 16:31:34 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 16:31:34 - iqro - INFO - Using dummy inference: True
+2026-02-03 16:31:34 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 16:31:34 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 16:31:34 - iqro - INFO - Database initialized
+2026-02-03 16:31:34 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 16:31:34 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 16:31:34 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 16:31:34 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 16:31:34 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 16:31:34 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 16:31:34 - iqro - INFO - TTS pre-generation complete
+2026-02-03 16:31:34 - iqro - INFO - Application startup complete
+2026-02-03 16:31:37 - iqro - INFO - Client connected: session_rigdjrmtb2cml6e9uz4
+2026-02-03 16:31:37 - iqro - INFO - Session already exists: session_rigdjrmtb2cml6e9uz4
+2026-02-03 16:31:37 - iqro - INFO - Client session_rigdjrmtb2cml6e9uz4 disconnected
+2026-02-03 16:31:37 - iqro - INFO - Client disconnected: session_rigdjrmtb2cml6e9uz4
+2026-02-03 16:31:37 - iqro - INFO - Client connected: session_lnjp8ohb6qml6eg0f0
+2026-02-03 16:31:41 - iqro - INFO - Client session_lnjp8ohb6qml6eg0f0 disconnected
+2026-02-03 16:31:41 - iqro - INFO - Client disconnected: session_lnjp8ohb6qml6eg0f0
+2026-02-03 16:31:41 - iqro - INFO - Client connected: session_493up65nentml6eg3bs
+2026-02-03 16:32:52 - iqro - INFO - Client session_493up65nentml6eg3bs disconnected
+2026-02-03 16:32:52 - iqro - INFO - Client disconnected: session_493up65nentml6eg3bs
+2026-02-03 16:32:52 - iqro - INFO - Client connected: session_bsa1nde20hqml6ehm93
+2026-02-03 16:38:31 - iqro - INFO - Client session_bsa1nde20hqml6ehm93 disconnected
+2026-02-03 16:38:31 - iqro - INFO - Client disconnected: session_bsa1nde20hqml6ehm93
+2026-02-03 16:38:31 - iqro - INFO - Shutting down application...
+2026-02-03 16:38:36 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 16:38:36 - iqro - INFO - Using dummy inference: True
+2026-02-03 16:38:36 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 16:38:36 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 16:38:36 - iqro - INFO - Database initialized
+2026-02-03 16:38:36 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 16:38:36 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 16:38:36 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 16:38:36 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 16:38:36 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 16:38:36 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 16:38:36 - iqro - INFO - TTS pre-generation complete
+2026-02-03 16:38:36 - iqro - INFO - Application startup complete
+2026-02-03 16:38:38 - iqro - INFO - Client connected: session_bsa1nde20hqml6ehm93
+2026-02-03 16:38:38 - iqro - INFO - Session already exists: session_bsa1nde20hqml6ehm93
+2026-02-03 16:38:38 - iqro - INFO - Client session_bsa1nde20hqml6ehm93 disconnected
+2026-02-03 16:38:38 - iqro - INFO - Client disconnected: session_bsa1nde20hqml6ehm93
+2026-02-03 16:38:39 - iqro - INFO - Client connected: session_0ypraef6xxqml6ep1dd
+2026-02-03 16:38:40 - iqro - INFO - Client session_0ypraef6xxqml6ep1dd disconnected
+2026-02-03 16:38:40 - iqro - INFO - Client disconnected: session_0ypraef6xxqml6ep1dd
+2026-02-03 16:38:40 - iqro - INFO - Client connected: session_ybjtk6flecml6ep2f7
+2026-02-03 16:38:41 - iqro - INFO - Client session_ybjtk6flecml6ep2f7 disconnected
+2026-02-03 16:38:41 - iqro - INFO - Client disconnected: session_ybjtk6flecml6ep2f7
+2026-02-03 16:38:41 - iqro - INFO - Client connected: session_n7jui2k6k3tml6ep3dj
+2026-02-03 16:38:42 - iqro - INFO - Client session_n7jui2k6k3tml6ep3dj disconnected
+2026-02-03 16:38:42 - iqro - INFO - Client disconnected: session_n7jui2k6k3tml6ep3dj
+2026-02-03 16:38:42 - iqro - INFO - Client connected: session_c443xp4aldml6ep48n
+2026-02-03 16:42:59 - iqro - INFO - Client session_c443xp4aldml6ep48n disconnected
+2026-02-03 16:42:59 - iqro - INFO - Client disconnected: session_c443xp4aldml6ep48n
+2026-02-03 16:42:59 - iqro - INFO - Shutting down application...
+2026-02-03 16:43:04 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 16:43:04 - iqro - INFO - Using dummy inference: True
+2026-02-03 16:43:04 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 16:43:04 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 16:43:04 - iqro - INFO - Database initialized
+2026-02-03 16:43:04 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 16:43:04 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 16:43:04 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 16:43:04 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 16:43:04 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 16:43:04 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 16:43:04 - iqro - INFO - TTS pre-generation complete
+2026-02-03 16:43:04 - iqro - INFO - Application startup complete
+2026-02-03 16:43:06 - iqro - INFO - Client connected: session_c443xp4aldml6ep48n
+2026-02-03 16:43:06 - iqro - INFO - Session already exists: session_c443xp4aldml6ep48n
+2026-02-03 16:43:06 - iqro - INFO - Client session_c443xp4aldml6ep48n disconnected
+2026-02-03 16:43:06 - iqro - INFO - Client disconnected: session_c443xp4aldml6ep48n
+2026-02-03 16:43:06 - iqro - INFO - Client connected: session_43pnc56bgbcml6eus3c
+2026-02-03 16:43:11 - iqro - INFO - Client session_43pnc56bgbcml6eus3c disconnected
+2026-02-03 16:43:11 - iqro - INFO - Client disconnected: session_43pnc56bgbcml6eus3c
+2026-02-03 16:43:11 - iqro - INFO - Client connected: session_p3b9fbeo4ojml6euvb8
+2026-02-03 16:47:40 - iqro - INFO - Client session_p3b9fbeo4ojml6euvb8 disconnected
+2026-02-03 16:47:40 - iqro - INFO - Client disconnected: session_p3b9fbeo4ojml6euvb8
+2026-02-03 16:47:40 - iqro - INFO - Shutting down application...
+2026-02-03 16:47:44 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 16:47:44 - iqro - INFO - Using dummy inference: True
+2026-02-03 16:47:44 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 16:47:44 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 16:47:44 - iqro - INFO - Database initialized
+2026-02-03 16:47:44 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 16:47:44 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 16:47:44 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 16:47:44 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 16:47:44 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 16:47:44 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 16:47:44 - iqro - INFO - TTS pre-generation complete
+2026-02-03 16:47:44 - iqro - INFO - Application startup complete
+2026-02-03 16:47:47 - iqro - INFO - Client connected: session_p3b9fbeo4ojml6euvb8
+2026-02-03 16:47:47 - iqro - INFO - Session already exists: session_p3b9fbeo4ojml6euvb8
+2026-02-03 16:47:47 - iqro - INFO - Client session_p3b9fbeo4ojml6euvb8 disconnected
+2026-02-03 16:47:47 - iqro - INFO - Client disconnected: session_p3b9fbeo4ojml6euvb8
+2026-02-03 16:47:47 - iqro - INFO - Client connected: session_55b8zxmc0suml6f0skr
+2026-02-03 16:48:20 - iqro - INFO - Client session_55b8zxmc0suml6f0skr disconnected
+2026-02-03 16:48:20 - iqro - INFO - Client disconnected: session_55b8zxmc0suml6f0skr
+2026-02-03 16:48:21 - iqro - INFO - Client connected: session_3xoml2dtpmml6f1ig8
+2026-02-03 16:48:40 - iqro - INFO - Client session_3xoml2dtpmml6f1ig8 disconnected
+2026-02-03 16:48:40 - iqro - INFO - Client disconnected: session_3xoml2dtpmml6f1ig8
+2026-02-03 16:48:40 - iqro - INFO - Client connected: session_k1fq9ml06uml6f1xqn
+2026-02-03 16:49:00 - iqro - INFO - Client session_k1fq9ml06uml6f1xqn disconnected
+2026-02-03 16:49:00 - iqro - INFO - Client disconnected: session_k1fq9ml06uml6f1xqn
+2026-02-03 16:49:01 - iqro - INFO - Client connected: session_8yf4qldaalml6f2db4
+2026-02-03 16:49:05 - iqro - INFO - Client session_8yf4qldaalml6f2db4 disconnected
+2026-02-03 16:49:05 - iqro - INFO - Client disconnected: session_8yf4qldaalml6f2db4
+2026-02-03 16:49:05 - iqro - INFO - Shutting down application...
+2026-02-03 16:49:14 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 16:49:14 - iqro - INFO - Using dummy inference: True
+2026-02-03 16:49:14 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 16:49:14 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 16:49:14 - iqro - INFO - Database initialized
+2026-02-03 16:49:14 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 16:49:14 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 16:49:14 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 16:49:14 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 16:49:14 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 16:49:14 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 16:49:14 - iqro - INFO - TTS pre-generation complete
+2026-02-03 16:49:14 - iqro - INFO - Application startup complete
+2026-02-03 16:49:15 - iqro - INFO - Client connected: session_d1ybv04lobnml6f2oh2
+2026-02-03 16:50:40 - iqro - INFO - Client session_d1ybv04lobnml6f2oh2 disconnected
+2026-02-03 16:50:40 - iqro - INFO - Client disconnected: session_d1ybv04lobnml6f2oh2
+2026-02-03 16:50:41 - iqro - INFO - Shutting down application...
+2026-02-03 16:55:13 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 16:55:13 - iqro - INFO - Using dummy inference: True
+2026-02-03 16:55:13 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 16:55:14 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 16:55:14 - iqro - INFO - Database initialized
+2026-02-03 16:55:14 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 16:55:14 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 16:55:14 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 16:55:14 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 16:55:14 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 16:55:14 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 16:55:14 - iqro - INFO - TTS pre-generation complete
+2026-02-03 16:55:14 - iqro - INFO - Application startup complete
+2026-02-03 16:55:20 - iqro - INFO - Client connected: session_xk29lqw7wuml6fai5e
+2026-02-03 16:56:05 - iqro - INFO - Client session_xk29lqw7wuml6fai5e disconnected
+2026-02-03 16:56:05 - iqro - INFO - Client disconnected: session_xk29lqw7wuml6fai5e
+2026-02-03 16:56:05 - iqro - INFO - Shutting down application...
+2026-02-03 16:56:09 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 16:56:09 - iqro - INFO - Using dummy inference: True
+2026-02-03 16:56:09 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 16:56:09 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 16:56:09 - iqro - INFO - Database initialized
+2026-02-03 16:56:09 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 16:56:09 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 16:56:09 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 16:56:09 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 16:56:09 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 16:56:09 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 16:56:09 - iqro - INFO - TTS pre-generation complete
+2026-02-03 16:56:09 - iqro - INFO - Application startup complete
+2026-02-03 16:56:11 - iqro - INFO - Client connected: session_xk29lqw7wuml6fai5e
+2026-02-03 16:56:11 - iqro - INFO - Session already exists: session_xk29lqw7wuml6fai5e
+2026-02-03 16:56:14 - iqro - INFO - Client session_xk29lqw7wuml6fai5e disconnected
+2026-02-03 16:56:14 - iqro - INFO - Client disconnected: session_xk29lqw7wuml6fai5e
+2026-02-03 16:56:14 - iqro - INFO - Client connected: session_bwvzv05o4fqml6fbnpo
+2026-02-03 17:02:46 - iqro - INFO - Client session_bwvzv05o4fqml6fbnpo disconnected
+2026-02-03 17:02:46 - iqro - INFO - Client disconnected: session_bwvzv05o4fqml6fbnpo
+2026-02-03 17:02:46 - iqro - INFO - Shutting down application...
+2026-02-03 17:02:54 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 17:02:54 - iqro - INFO - Using dummy inference: True
+2026-02-03 17:02:54 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 17:02:54 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 17:02:54 - iqro - INFO - Database initialized
+2026-02-03 17:02:54 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 17:02:54 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:02:54 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:02:54 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:02:54 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:02:54 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:02:54 - iqro - INFO - TTS pre-generation complete
+2026-02-03 17:02:54 - iqro - INFO - Application startup complete
+2026-02-03 17:02:57 - iqro - INFO - Client connected: session_h6cxf1oeqxuml6fkab8
+2026-02-03 17:03:08 - iqro - INFO - Client session_h6cxf1oeqxuml6fkab8 disconnected
+2026-02-03 17:03:08 - iqro - INFO - Client disconnected: session_h6cxf1oeqxuml6fkab8
+2026-02-03 17:03:08 - iqro - INFO - Client connected: session_w6ukz2qmynml6fkjju
+2026-02-03 17:07:48 - iqro - INFO - Client session_w6ukz2qmynml6fkjju disconnected
+2026-02-03 17:07:48 - iqro - INFO - Client disconnected: session_w6ukz2qmynml6fkjju
+2026-02-03 17:07:48 - iqro - INFO - Shutting down application...
+2026-02-03 17:08:04 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 17:08:04 - iqro - INFO - Using dummy inference: True
+2026-02-03 17:08:04 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 17:08:04 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 17:08:04 - iqro - INFO - Database initialized
+2026-02-03 17:08:04 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 17:08:04 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:08:04 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:08:04 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:08:04 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:08:04 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:08:04 - iqro - INFO - TTS pre-generation complete
+2026-02-03 17:08:04 - iqro - INFO - Application startup complete
+2026-02-03 17:08:04 - iqro - INFO - Client connected: session_w6ukz2qmynml6fkjju
+2026-02-03 17:08:05 - iqro - INFO - Session already exists: session_w6ukz2qmynml6fkjju
+2026-02-03 17:08:14 - iqro - INFO - Client session_w6ukz2qmynml6fkjju disconnected
+2026-02-03 17:08:14 - iqro - INFO - Client disconnected: session_w6ukz2qmynml6fkjju
+2026-02-03 17:08:14 - iqro - INFO - Client connected: session_be6oeafxn9ml6fr38q
+2026-02-03 17:14:37 - iqro - INFO - Client session_be6oeafxn9ml6fr38q disconnected
+2026-02-03 17:14:37 - iqro - INFO - Client disconnected: session_be6oeafxn9ml6fr38q
+2026-02-03 17:14:37 - iqro - INFO - Shutting down application...
+2026-02-03 17:14:47 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 17:14:47 - iqro - INFO - Using dummy inference: True
+2026-02-03 17:14:47 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 17:14:47 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 17:14:47 - iqro - INFO - Database initialized
+2026-02-03 17:14:47 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 17:14:47 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:14:47 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:14:47 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:14:47 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:14:47 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:14:47 - iqro - INFO - TTS pre-generation complete
+2026-02-03 17:14:47 - iqro - INFO - Application startup complete
+2026-02-03 17:15:13 - iqro - INFO - Client connected: session_t9ed8gw6ruml6g02o4
+2026-02-03 17:17:47 - iqro - INFO - Client session_t9ed8gw6ruml6g02o4 disconnected
+2026-02-03 17:17:47 - iqro - INFO - Client disconnected: session_t9ed8gw6ruml6g02o4
+2026-02-03 17:17:47 - iqro - INFO - Shutting down application...
+2026-02-03 17:18:39 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 17:18:39 - iqro - INFO - Using dummy inference: True
+2026-02-03 17:18:39 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 17:18:39 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 17:18:39 - iqro - INFO - Database initialized
+2026-02-03 17:18:39 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 17:18:39 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:18:39 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:18:39 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:18:39 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:18:39 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:18:39 - iqro - INFO - TTS pre-generation complete
+2026-02-03 17:18:39 - iqro - INFO - Application startup complete
+2026-02-03 17:19:02 - iqro - INFO - Client connected: session_z10iawmmoshml6g4zgx
+2026-02-03 17:26:14 - iqro - INFO - Client session_z10iawmmoshml6g4zgx disconnected
+2026-02-03 17:26:14 - iqro - INFO - Client disconnected: session_z10iawmmoshml6g4zgx
+2026-02-03 17:26:14 - iqro - INFO - Shutting down application...
+2026-02-03 17:26:55 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 17:26:55 - iqro - INFO - Using dummy inference: True
+2026-02-03 17:26:55 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 17:26:55 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 17:26:55 - iqro - INFO - Database initialized
+2026-02-03 17:26:55 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 17:26:55 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:26:55 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:26:55 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:26:55 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:26:55 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:26:55 - iqro - INFO - TTS pre-generation complete
+2026-02-03 17:26:55 - iqro - INFO - Application startup complete
+2026-02-03 17:26:59 - iqro - INFO - Client connected: session_0mityrxkdz6hml6gf7r8
+2026-02-03 17:27:15 - iqro - INFO - Dummy prediction: Ta (confidence: 0.74)
+2026-02-03 17:27:15 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:27:15 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.74)
+2026-02-03 17:27:15 - iqro - INFO - Dummy prediction: Ta (confidence: 0.73)
+2026-02-03 17:27:15 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:27:15 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.73)
+2026-02-03 17:27:16 - iqro - INFO - Dummy prediction: Ta (confidence: 0.88)
+2026-02-03 17:27:16 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:27:16 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.88)
+2026-02-03 17:27:16 - iqro - INFO - Dummy prediction: Ta (confidence: 0.72)
+2026-02-03 17:27:16 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:27:16 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.72)
+2026-02-03 17:27:17 - iqro - INFO - Dummy prediction: Jim (confidence: 0.95)
+2026-02-03 17:27:17 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:17 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.95)
+2026-02-03 17:27:17 - iqro - INFO - Dummy prediction: Ba (confidence: 0.84)
+2026-02-03 17:27:17 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:27:17 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.84)
+2026-02-03 17:27:18 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.71)
+2026-02-03 17:27:18 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:27:18 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.71)
+2026-02-03 17:27:18 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.74)
+2026-02-03 17:27:18 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:27:18 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.74)
+2026-02-03 17:27:19 - iqro - INFO - Dummy prediction: Ba (confidence: 0.80)
+2026-02-03 17:27:19 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:27:19 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.80)
+2026-02-03 17:27:19 - iqro - INFO - Dummy prediction: Ba (confidence: 0.82)
+2026-02-03 17:27:19 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:27:19 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.82)
+2026-02-03 17:27:21 - iqro - INFO - Dummy prediction: Ta (confidence: 0.71)
+2026-02-03 17:27:21 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:27:21 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.71)
+2026-02-03 17:27:21 - iqro - INFO - Dummy prediction: Ta (confidence: 0.91)
+2026-02-03 17:27:21 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:27:21 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.91)
+2026-02-03 17:27:22 - iqro - INFO - Dummy prediction: Ba (confidence: 0.93)
+2026-02-03 17:27:22 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:27:22 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.93)
+2026-02-03 17:27:22 - iqro - INFO - Dummy prediction: Ta (confidence: 0.88)
+2026-02-03 17:27:22 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:27:22 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.88)
+2026-02-03 17:27:23 - iqro - INFO - Dummy prediction: Alif (confidence: 0.89)
+2026-02-03 17:27:23 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:27:23 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.89)
+2026-02-03 17:27:23 - iqro - INFO - Dummy prediction: Jim (confidence: 0.75)
+2026-02-03 17:27:23 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:23 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.75)
+2026-02-03 17:27:24 - iqro - INFO - Dummy prediction: Alif (confidence: 0.71)
+2026-02-03 17:27:24 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:27:24 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.71)
+2026-02-03 17:27:24 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.90)
+2026-02-03 17:27:24 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:27:24 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.90)
+2026-02-03 17:27:25 - iqro - INFO - Dummy prediction: Ba (confidence: 0.70)
+2026-02-03 17:27:25 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:27:25 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.70)
+2026-02-03 17:27:25 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.75)
+2026-02-03 17:27:25 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:27:25 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.75)
+2026-02-03 17:27:26 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.73)
+2026-02-03 17:27:26 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:27:26 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.73)
+2026-02-03 17:27:26 - iqro - INFO - Dummy prediction: Jim (confidence: 0.71)
+2026-02-03 17:27:26 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:26 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.71)
+2026-02-03 17:27:27 - iqro - INFO - Dummy prediction: Alif (confidence: 0.70)
+2026-02-03 17:27:27 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:27:27 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.70)
+2026-02-03 17:27:28 - iqro - INFO - Dummy prediction: Jim (confidence: 0.80)
+2026-02-03 17:27:28 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:28 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.80)
+2026-02-03 17:27:28 - iqro - INFO - Dummy prediction: Jim (confidence: 0.71)
+2026-02-03 17:27:28 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:28 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.71)
+2026-02-03 17:27:29 - iqro - INFO - Dummy prediction: Ta (confidence: 0.77)
+2026-02-03 17:27:29 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:27:29 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.77)
+2026-02-03 17:27:29 - iqro - INFO - Dummy prediction: Jim (confidence: 0.92)
+2026-02-03 17:27:29 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:29 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.92)
+2026-02-03 17:27:30 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.89)
+2026-02-03 17:27:30 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:27:30 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.89)
+2026-02-03 17:27:30 - iqro - INFO - Dummy prediction: Jim (confidence: 0.85)
+2026-02-03 17:27:30 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:30 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.85)
+2026-02-03 17:27:31 - iqro - INFO - Dummy prediction: Jim (confidence: 0.78)
+2026-02-03 17:27:31 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:31 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.78)
+2026-02-03 17:27:35 - iqro - INFO - Dummy prediction: Alif (confidence: 0.90)
+2026-02-03 17:27:35 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:27:35 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.90)
+2026-02-03 17:27:35 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.81)
+2026-02-03 17:27:35 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:27:35 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.81)
+2026-02-03 17:27:36 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.83)
+2026-02-03 17:27:36 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:27:36 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.83)
+2026-02-03 17:27:36 - iqro - INFO - Dummy prediction: Ba (confidence: 0.82)
+2026-02-03 17:27:36 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:27:36 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.82)
+2026-02-03 17:27:37 - iqro - INFO - Dummy prediction: Jim (confidence: 0.81)
+2026-02-03 17:27:37 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:37 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.81)
+2026-02-03 17:27:37 - iqro - INFO - Dummy prediction: Ba (confidence: 0.77)
+2026-02-03 17:27:37 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:27:37 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.77)
+2026-02-03 17:27:38 - iqro - INFO - Dummy prediction: Ba (confidence: 0.80)
+2026-02-03 17:27:38 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:27:38 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.80)
+2026-02-03 17:27:38 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.83)
+2026-02-03 17:27:38 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:27:38 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.83)
+2026-02-03 17:27:39 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.86)
+2026-02-03 17:27:39 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:27:39 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.86)
+2026-02-03 17:27:39 - iqro - INFO - Dummy prediction: Jim (confidence: 0.94)
+2026-02-03 17:27:39 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:39 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.94)
+2026-02-03 17:27:40 - iqro - INFO - Dummy prediction: Alif (confidence: 0.90)
+2026-02-03 17:27:40 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:27:40 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.90)
+2026-02-03 17:27:40 - iqro - INFO - Dummy prediction: Ba (confidence: 0.93)
+2026-02-03 17:27:40 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:27:40 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.93)
+2026-02-03 17:27:41 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.78)
+2026-02-03 17:27:41 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:27:41 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.78)
+2026-02-03 17:27:41 - iqro - INFO - Dummy prediction: Jim (confidence: 0.75)
+2026-02-03 17:27:41 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:41 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.75)
+2026-02-03 17:27:42 - iqro - INFO - Dummy prediction: Jim (confidence: 0.80)
+2026-02-03 17:27:42 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:42 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.80)
+2026-02-03 17:27:42 - iqro - INFO - Dummy prediction: Jim (confidence: 0.77)
+2026-02-03 17:27:42 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:42 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.77)
+2026-02-03 17:27:43 - iqro - INFO - Dummy prediction: Alif (confidence: 0.75)
+2026-02-03 17:27:43 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:27:43 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.75)
+2026-02-03 17:27:43 - iqro - INFO - Dummy prediction: Jim (confidence: 0.85)
+2026-02-03 17:27:43 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:43 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.85)
+2026-02-03 17:27:44 - iqro - INFO - Dummy prediction: Jim (confidence: 0.81)
+2026-02-03 17:27:44 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:44 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.81)
+2026-02-03 17:27:44 - iqro - INFO - Dummy prediction: Ta (confidence: 0.92)
+2026-02-03 17:27:44 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:27:44 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.92)
+2026-02-03 17:27:45 - iqro - INFO - Dummy prediction: Ba (confidence: 0.91)
+2026-02-03 17:27:45 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:27:45 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.91)
+2026-02-03 17:27:45 - iqro - INFO - Dummy prediction: Ba (confidence: 0.75)
+2026-02-03 17:27:45 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:27:46 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.75)
+2026-02-03 17:27:46 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.73)
+2026-02-03 17:27:46 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:27:46 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.73)
+2026-02-03 17:27:47 - iqro - INFO - Dummy prediction: Alif (confidence: 0.83)
+2026-02-03 17:27:47 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:27:47 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.83)
+2026-02-03 17:27:47 - iqro - INFO - Dummy prediction: Ba (confidence: 0.91)
+2026-02-03 17:27:47 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:27:47 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.91)
+2026-02-03 17:27:48 - iqro - INFO - Dummy prediction: Jim (confidence: 0.80)
+2026-02-03 17:27:48 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:48 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.80)
+2026-02-03 17:27:48 - iqro - INFO - Dummy prediction: Ta (confidence: 0.88)
+2026-02-03 17:27:48 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:27:48 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.88)
+2026-02-03 17:27:49 - iqro - INFO - Dummy prediction: Alif (confidence: 0.82)
+2026-02-03 17:27:49 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:27:49 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.82)
+2026-02-03 17:27:49 - iqro - INFO - Dummy prediction: Jim (confidence: 0.86)
+2026-02-03 17:27:49 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:49 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.86)
+2026-02-03 17:27:50 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.86)
+2026-02-03 17:27:50 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:27:50 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.86)
+2026-02-03 17:27:50 - iqro - INFO - Dummy prediction: Alif (confidence: 0.76)
+2026-02-03 17:27:50 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:27:50 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.76)
+2026-02-03 17:27:51 - iqro - INFO - Dummy prediction: Jim (confidence: 0.70)
+2026-02-03 17:27:51 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:51 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.70)
+2026-02-03 17:27:51 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.86)
+2026-02-03 17:27:51 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:27:51 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.86)
+2026-02-03 17:27:52 - iqro - INFO - Dummy prediction: Jim (confidence: 0.87)
+2026-02-03 17:27:52 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:52 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.87)
+2026-02-03 17:27:52 - iqro - INFO - Dummy prediction: Ba (confidence: 0.89)
+2026-02-03 17:27:52 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:27:52 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.89)
+2026-02-03 17:27:53 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.77)
+2026-02-03 17:27:53 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:27:53 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.77)
+2026-02-03 17:27:53 - iqro - INFO - Dummy prediction: Jim (confidence: 0.92)
+2026-02-03 17:27:53 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:53 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.92)
+2026-02-03 17:27:54 - iqro - INFO - Dummy prediction: Ta (confidence: 0.95)
+2026-02-03 17:27:54 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:27:54 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.95)
+2026-02-03 17:27:54 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.77)
+2026-02-03 17:27:54 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:27:54 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.77)
+2026-02-03 17:27:55 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.90)
+2026-02-03 17:27:55 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:27:55 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.90)
+2026-02-03 17:27:57 - iqro - INFO - Dummy prediction: Jim (confidence: 0.86)
+2026-02-03 17:27:57 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:27:57 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.86)
+2026-02-03 17:27:58 - iqro - INFO - Dummy prediction: Alif (confidence: 0.91)
+2026-02-03 17:27:58 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:27:58 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.91)
+2026-02-03 17:27:58 - iqro - INFO - Dummy prediction: Alif (confidence: 0.86)
+2026-02-03 17:27:58 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:27:58 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.86)
+2026-02-03 17:28:04 - iqro - INFO - Dummy prediction: Ta (confidence: 0.87)
+2026-02-03 17:28:04 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:28:04 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.87)
+2026-02-03 17:28:04 - iqro - INFO - Dummy prediction: Ba (confidence: 0.88)
+2026-02-03 17:28:04 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:28:04 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.88)
+2026-02-03 17:28:05 - iqro - INFO - Dummy prediction: Ba (confidence: 0.94)
+2026-02-03 17:28:05 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:28:05 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.94)
+2026-02-03 17:28:05 - iqro - INFO - Dummy prediction: Ba (confidence: 0.84)
+2026-02-03 17:28:05 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:28:05 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.84)
+2026-02-03 17:28:06 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.72)
+2026-02-03 17:28:06 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:28:06 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.72)
+2026-02-03 17:28:06 - iqro - INFO - Dummy prediction: Jim (confidence: 0.88)
+2026-02-03 17:28:06 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:28:06 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.88)
+2026-02-03 17:28:07 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.74)
+2026-02-03 17:28:07 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:28:07 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.74)
+2026-02-03 17:28:16 - iqro - INFO - Dummy prediction: Jim (confidence: 0.74)
+2026-02-03 17:28:16 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:28:16 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.74)
+2026-02-03 17:28:17 - iqro - INFO - Dummy prediction: Alif (confidence: 0.88)
+2026-02-03 17:28:17 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:28:17 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.88)
+2026-02-03 17:28:17 - iqro - INFO - Dummy prediction: Ta (confidence: 0.93)
+2026-02-03 17:28:17 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:28:17 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.93)
+2026-02-03 17:28:18 - iqro - INFO - Dummy prediction: Ba (confidence: 0.78)
+2026-02-03 17:28:18 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:28:18 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.78)
+2026-02-03 17:28:18 - iqro - INFO - Dummy prediction: Ba (confidence: 0.78)
+2026-02-03 17:28:18 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:28:18 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.78)
+2026-02-03 17:28:19 - iqro - INFO - Dummy prediction: Ta (confidence: 0.88)
+2026-02-03 17:28:19 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:28:19 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.88)
+2026-02-03 17:28:19 - iqro - INFO - Dummy prediction: Ba (confidence: 0.77)
+2026-02-03 17:28:19 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:28:19 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.77)
+2026-02-03 17:28:20 - iqro - INFO - Dummy prediction: Jim (confidence: 0.90)
+2026-02-03 17:28:20 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:28:20 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.90)
+2026-02-03 17:28:21 - iqro - INFO - Dummy prediction: Ta (confidence: 0.75)
+2026-02-03 17:28:21 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:28:21 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.75)
+2026-02-03 17:28:21 - iqro - INFO - Dummy prediction: Jim (confidence: 0.75)
+2026-02-03 17:28:21 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:28:21 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.75)
+2026-02-03 17:28:22 - iqro - INFO - Dummy prediction: Alif (confidence: 0.75)
+2026-02-03 17:28:22 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:28:22 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.75)
+2026-02-03 17:28:22 - iqro - INFO - Dummy prediction: Ta (confidence: 0.71)
+2026-02-03 17:28:22 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:28:22 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.71)
+2026-02-03 17:28:23 - iqro - INFO - Dummy prediction: Ba (confidence: 0.92)
+2026-02-03 17:28:23 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:28:23 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.92)
+2026-02-03 17:28:24 - iqro - INFO - Dummy prediction: Alif (confidence: 0.83)
+2026-02-03 17:28:24 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:28:24 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.83)
+2026-02-03 17:28:24 - iqro - INFO - Dummy prediction: Alif (confidence: 0.75)
+2026-02-03 17:28:24 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:28:24 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.75)
+2026-02-03 17:28:25 - iqro - INFO - Dummy prediction: Ba (confidence: 0.79)
+2026-02-03 17:28:25 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:28:25 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.79)
+2026-02-03 17:28:25 - iqro - INFO - Dummy prediction: Alif (confidence: 0.75)
+2026-02-03 17:28:25 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:28:25 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.75)
+2026-02-03 17:28:26 - iqro - INFO - Dummy prediction: Alif (confidence: 0.79)
+2026-02-03 17:28:26 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:28:26 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.79)
+2026-02-03 17:28:26 - iqro - INFO - Dummy prediction: Ba (confidence: 0.93)
+2026-02-03 17:28:26 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:28:26 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.93)
+2026-02-03 17:28:27 - iqro - INFO - Dummy prediction: Ba (confidence: 0.94)
+2026-02-03 17:28:27 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:28:27 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.94)
+2026-02-03 17:28:29 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.72)
+2026-02-03 17:28:29 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:28:29 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.72)
+2026-02-03 17:28:29 - iqro - INFO - Dummy prediction: Ba (confidence: 0.82)
+2026-02-03 17:28:29 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:28:29 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.82)
+2026-02-03 17:28:30 - iqro - INFO - Dummy prediction: Alif (confidence: 0.89)
+2026-02-03 17:28:30 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:28:30 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.89)
+2026-02-03 17:28:30 - iqro - INFO - Dummy prediction: Ba (confidence: 0.72)
+2026-02-03 17:28:30 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:28:30 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.72)
+2026-02-03 17:28:31 - iqro - INFO - Dummy prediction: Alif (confidence: 0.89)
+2026-02-03 17:28:31 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:28:31 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.89)
+2026-02-03 17:28:31 - iqro - INFO - Dummy prediction: Ta (confidence: 0.94)
+2026-02-03 17:28:31 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:28:31 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.94)
+2026-02-03 17:28:32 - iqro - INFO - Dummy prediction: Jim (confidence: 0.82)
+2026-02-03 17:28:32 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:28:32 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.82)
+2026-02-03 17:28:32 - iqro - INFO - Dummy prediction: Ba (confidence: 0.84)
+2026-02-03 17:28:32 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:28:32 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.84)
+2026-02-03 17:28:34 - iqro - INFO - Dummy prediction: Jim (confidence: 0.72)
+2026-02-03 17:28:34 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:28:34 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.72)
+2026-02-03 17:28:35 - iqro - INFO - Dummy prediction: Ba (confidence: 0.77)
+2026-02-03 17:28:35 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:28:35 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.77)
+2026-02-03 17:28:35 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.93)
+2026-02-03 17:28:35 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:28:35 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.93)
+2026-02-03 17:28:36 - iqro - INFO - Dummy prediction: Alif (confidence: 0.75)
+2026-02-03 17:28:36 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:28:36 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.75)
+2026-02-03 17:28:36 - iqro - INFO - Dummy prediction: Ba (confidence: 0.72)
+2026-02-03 17:28:36 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:28:36 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.72)
+2026-02-03 17:28:37 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.92)
+2026-02-03 17:28:37 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:28:37 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.92)
+2026-02-03 17:28:37 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.78)
+2026-02-03 17:28:37 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:28:37 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.78)
+2026-02-03 17:28:38 - iqro - INFO - Dummy prediction: Jim (confidence: 0.92)
+2026-02-03 17:28:38 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:28:38 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.92)
+2026-02-03 17:28:38 - iqro - INFO - Dummy prediction: Ta (confidence: 0.74)
+2026-02-03 17:28:38 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:28:39 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.74)
+2026-02-03 17:28:40 - iqro - INFO - Dummy prediction: Alif (confidence: 0.78)
+2026-02-03 17:28:40 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:28:40 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.78)
+2026-02-03 17:28:41 - iqro - INFO - Dummy prediction: Alif (confidence: 0.89)
+2026-02-03 17:28:41 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:28:41 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.89)
+2026-02-03 17:29:57 - iqro - INFO - Dummy prediction: Ta (confidence: 0.74)
+2026-02-03 17:29:57 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:29:57 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.74)
+2026-02-03 17:29:57 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.72)
+2026-02-03 17:29:57 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:29:57 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.72)
+2026-02-03 17:29:58 - iqro - INFO - Dummy prediction: Jim (confidence: 0.74)
+2026-02-03 17:29:58 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:29:58 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.74)
+2026-02-03 17:29:58 - iqro - INFO - Dummy prediction: Jim (confidence: 0.75)
+2026-02-03 17:29:58 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:29:58 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.75)
+2026-02-03 17:29:59 - iqro - INFO - Dummy prediction: Jim (confidence: 0.82)
+2026-02-03 17:29:59 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:29:59 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.82)
+2026-02-03 17:30:00 - iqro - INFO - Dummy prediction: Alif (confidence: 0.80)
+2026-02-03 17:30:00 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:30:00 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.80)
+2026-02-03 17:30:02 - iqro - INFO - Dummy prediction: Alif (confidence: 0.81)
+2026-02-03 17:30:02 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:30:02 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.81)
+2026-02-03 17:30:02 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.94)
+2026-02-03 17:30:02 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:30:02 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.94)
+2026-02-03 17:30:03 - iqro - INFO - Dummy prediction: Ba (confidence: 0.71)
+2026-02-03 17:30:03 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:30:03 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.71)
+2026-02-03 17:30:04 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.89)
+2026-02-03 17:30:04 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:30:04 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.89)
+2026-02-03 17:30:04 - iqro - INFO - Dummy prediction: Jim (confidence: 0.89)
+2026-02-03 17:30:04 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:30:04 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.89)
+2026-02-03 17:30:05 - iqro - INFO - Dummy prediction: Alif (confidence: 0.72)
+2026-02-03 17:30:05 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:30:05 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.72)
+2026-02-03 17:30:05 - iqro - INFO - Dummy prediction: Alif (confidence: 0.77)
+2026-02-03 17:30:05 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:30:05 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.77)
+2026-02-03 17:30:06 - iqro - INFO - Dummy prediction: Jim (confidence: 0.78)
+2026-02-03 17:30:06 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:30:06 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.78)
+2026-02-03 17:30:06 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.91)
+2026-02-03 17:30:06 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:30:06 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.91)
+2026-02-03 17:30:07 - iqro - INFO - Dummy prediction: Ba (confidence: 0.94)
+2026-02-03 17:30:07 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:30:07 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.94)
+2026-02-03 17:30:07 - iqro - INFO - Dummy prediction: Alif (confidence: 0.71)
+2026-02-03 17:30:07 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:30:07 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.71)
+2026-02-03 17:30:08 - iqro - INFO - Dummy prediction: Ba (confidence: 0.85)
+2026-02-03 17:30:08 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:30:08 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.85)
+2026-02-03 17:30:08 - iqro - INFO - Dummy prediction: Jim (confidence: 0.93)
+2026-02-03 17:30:08 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:30:08 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.93)
+2026-02-03 17:30:09 - iqro - INFO - Dummy prediction: Jim (confidence: 0.72)
+2026-02-03 17:30:09 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:30:09 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.72)
+2026-02-03 17:30:09 - iqro - INFO - Dummy prediction: Alif (confidence: 0.71)
+2026-02-03 17:30:09 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:30:09 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.71)
+2026-02-03 17:30:10 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.71)
+2026-02-03 17:30:10 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:30:10 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.71)
+2026-02-03 17:30:10 - iqro - INFO - Dummy prediction: Alif (confidence: 0.77)
+2026-02-03 17:30:10 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:30:10 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.77)
+2026-02-03 17:30:11 - iqro - INFO - Dummy prediction: Ba (confidence: 0.78)
+2026-02-03 17:30:11 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:30:11 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.78)
+2026-02-03 17:30:11 - iqro - INFO - Dummy prediction: Jim (confidence: 0.91)
+2026-02-03 17:30:11 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:30:11 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.91)
+2026-02-03 17:30:12 - iqro - INFO - Dummy prediction: Jim (confidence: 0.72)
+2026-02-03 17:30:12 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:30:12 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.72)
+2026-02-03 17:30:12 - iqro - INFO - Dummy prediction: Alif (confidence: 0.91)
+2026-02-03 17:30:12 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:30:13 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.91)
+2026-02-03 17:30:13 - iqro - INFO - Dummy prediction: Jim (confidence: 0.73)
+2026-02-03 17:30:13 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:30:13 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.73)
+2026-02-03 17:30:14 - iqro - INFO - Dummy prediction: Alif (confidence: 0.80)
+2026-02-03 17:30:14 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:30:14 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Alif (0.80)
+2026-02-03 17:30:14 - iqro - INFO - Dummy prediction: Jim (confidence: 0.79)
+2026-02-03 17:30:14 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:30:14 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.79)
+2026-02-03 17:30:15 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.81)
+2026-02-03 17:30:15 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:30:15 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Tsa (0.81)
+2026-02-03 17:30:16 - iqro - INFO - Dummy prediction: Ta (confidence: 0.77)
+2026-02-03 17:30:16 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:30:16 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.77)
+2026-02-03 17:30:17 - iqro - INFO - Dummy prediction: Jim (confidence: 0.86)
+2026-02-03 17:30:17 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:30:17 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Jim (0.86)
+2026-02-03 17:30:17 - iqro - INFO - Dummy prediction: Ta (confidence: 0.85)
+2026-02-03 17:30:17 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:30:17 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.85)
+2026-02-03 17:30:18 - iqro - INFO - Dummy prediction: Ba (confidence: 0.91)
+2026-02-03 17:30:18 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:30:18 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ba (0.91)
+2026-02-03 17:30:20 - iqro - INFO - Dummy prediction: Ta (confidence: 0.93)
+2026-02-03 17:30:20 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:30:20 - iqro - INFO - Prediction sent to session_0mityrxkdz6hml6gf7r8: Ta (0.93)
+2026-02-03 17:30:30 - iqro - INFO - Client session_0mityrxkdz6hml6gf7r8 disconnected
+2026-02-03 17:30:30 - iqro - INFO - Client disconnected: session_0mityrxkdz6hml6gf7r8
+2026-02-03 17:30:30 - iqro - INFO - Shutting down application...
+2026-02-03 17:31:34 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 17:31:34 - iqro - INFO - Using dummy inference: True
+2026-02-03 17:31:34 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 17:31:34 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 17:31:34 - iqro - INFO - Database initialized
+2026-02-03 17:31:34 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 17:31:34 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:31:34 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:31:34 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:31:34 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:31:34 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:31:34 - iqro - INFO - TTS pre-generation complete
+2026-02-03 17:31:34 - iqro - INFO - Application startup complete
+2026-02-03 17:31:38 - iqro - INFO - Client connected: session_m5lt7ehzhoml6gl6lo
+2026-02-03 17:31:41 - iqro - INFO - Dummy prediction: Ba (confidence: 0.94)
+2026-02-03 17:31:41 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:31:41 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ba (0.94)
+2026-02-03 17:31:43 - iqro - INFO - Dummy prediction: Jim (confidence: 0.80)
+2026-02-03 17:31:43 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:31:43 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Jim (0.80)
+2026-02-03 17:31:43 - iqro - INFO - Dummy prediction: Ta (confidence: 0.94)
+2026-02-03 17:31:43 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:31:43 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ta (0.94)
+2026-02-03 17:31:44 - iqro - INFO - Dummy prediction: Ba (confidence: 0.94)
+2026-02-03 17:31:44 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:31:44 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ba (0.94)
+2026-02-03 17:31:44 - iqro - INFO - Dummy prediction: Ta (confidence: 0.81)
+2026-02-03 17:31:44 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:31:44 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ta (0.81)
+2026-02-03 17:31:45 - iqro - INFO - Dummy prediction: Ta (confidence: 0.92)
+2026-02-03 17:31:45 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:31:45 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ta (0.92)
+2026-02-03 17:31:45 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.77)
+2026-02-03 17:31:45 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:31:45 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Tsa (0.77)
+2026-02-03 17:31:46 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.95)
+2026-02-03 17:31:46 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:31:46 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Tsa (0.95)
+2026-02-03 17:31:46 - iqro - INFO - Dummy prediction: Jim (confidence: 0.71)
+2026-02-03 17:31:46 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:31:46 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Jim (0.71)
+2026-02-03 17:31:47 - iqro - INFO - Dummy prediction: Ba (confidence: 0.72)
+2026-02-03 17:31:47 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:31:47 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ba (0.72)
+2026-02-03 17:31:47 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.76)
+2026-02-03 17:31:47 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:31:47 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Tsa (0.76)
+2026-02-03 17:31:48 - iqro - INFO - Dummy prediction: Ba (confidence: 0.71)
+2026-02-03 17:31:48 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:31:48 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ba (0.71)
+2026-02-03 17:31:48 - iqro - INFO - Dummy prediction: Jim (confidence: 0.75)
+2026-02-03 17:31:48 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:31:48 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Jim (0.75)
+2026-02-03 17:31:49 - iqro - INFO - Dummy prediction: Ta (confidence: 0.77)
+2026-02-03 17:31:49 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:31:49 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ta (0.77)
+2026-02-03 17:31:49 - iqro - INFO - Dummy prediction: Ba (confidence: 0.85)
+2026-02-03 17:31:49 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:31:49 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ba (0.85)
+2026-02-03 17:31:52 - iqro - INFO - Dummy prediction: Ta (confidence: 0.86)
+2026-02-03 17:31:52 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:31:52 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ta (0.86)
+2026-02-03 17:31:52 - iqro - INFO - Dummy prediction: Jim (confidence: 0.78)
+2026-02-03 17:31:52 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:31:52 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Jim (0.78)
+2026-02-03 17:31:53 - iqro - INFO - Dummy prediction: Ta (confidence: 0.88)
+2026-02-03 17:31:53 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:31:53 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ta (0.88)
+2026-02-03 17:31:53 - iqro - INFO - Dummy prediction: Ta (confidence: 0.93)
+2026-02-03 17:31:53 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:31:53 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ta (0.93)
+2026-02-03 17:31:54 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.83)
+2026-02-03 17:31:54 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:31:54 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Tsa (0.83)
+2026-02-03 17:31:54 - iqro - INFO - Dummy prediction: Jim (confidence: 0.71)
+2026-02-03 17:31:54 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:31:54 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Jim (0.71)
+2026-02-03 17:31:55 - iqro - INFO - Dummy prediction: Jim (confidence: 0.80)
+2026-02-03 17:31:55 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:31:55 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Jim (0.80)
+2026-02-03 17:31:55 - iqro - INFO - Dummy prediction: Ta (confidence: 0.74)
+2026-02-03 17:31:55 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:31:55 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ta (0.74)
+2026-02-03 17:31:56 - iqro - INFO - Dummy prediction: Jim (confidence: 0.79)
+2026-02-03 17:31:56 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:31:56 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Jim (0.79)
+2026-02-03 17:31:56 - iqro - INFO - Dummy prediction: Ta (confidence: 0.72)
+2026-02-03 17:31:56 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:31:56 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ta (0.72)
+2026-02-03 17:31:57 - iqro - INFO - Dummy prediction: Ta (confidence: 0.93)
+2026-02-03 17:31:57 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:31:57 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ta (0.93)
+2026-02-03 17:31:57 - iqro - INFO - Dummy prediction: Ta (confidence: 0.83)
+2026-02-03 17:31:57 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:31:57 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ta (0.83)
+2026-02-03 17:31:58 - iqro - INFO - Dummy prediction: Alif (confidence: 0.86)
+2026-02-03 17:31:58 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:31:58 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Alif (0.86)
+2026-02-03 17:31:58 - iqro - INFO - Dummy prediction: Alif (confidence: 0.87)
+2026-02-03 17:31:58 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:31:58 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Alif (0.87)
+2026-02-03 17:32:04 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.79)
+2026-02-03 17:32:04 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:32:04 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Tsa (0.79)
+2026-02-03 17:32:04 - iqro - INFO - Dummy prediction: Jim (confidence: 0.76)
+2026-02-03 17:32:04 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:32:04 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Jim (0.76)
+2026-02-03 17:32:05 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.77)
+2026-02-03 17:32:05 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:32:05 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Tsa (0.77)
+2026-02-03 17:32:05 - iqro - INFO - Dummy prediction: Jim (confidence: 0.73)
+2026-02-03 17:32:05 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:32:05 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Jim (0.73)
+2026-02-03 17:32:13 - iqro - INFO - Dummy prediction: Jim (confidence: 0.83)
+2026-02-03 17:32:13 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:32:13 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Jim (0.83)
+2026-02-03 17:32:14 - iqro - INFO - Dummy prediction: Alif (confidence: 0.77)
+2026-02-03 17:32:14 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:32:14 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Alif (0.77)
+2026-02-03 17:32:14 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.70)
+2026-02-03 17:32:14 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:32:14 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Tsa (0.70)
+2026-02-03 17:32:15 - iqro - INFO - Dummy prediction: Ta (confidence: 0.89)
+2026-02-03 17:32:15 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:32:15 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ta (0.89)
+2026-02-03 17:32:17 - iqro - INFO - Dummy prediction: Ba (confidence: 0.72)
+2026-02-03 17:32:17 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:32:17 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ba (0.72)
+2026-02-03 17:32:19 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.81)
+2026-02-03 17:32:19 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:32:19 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Tsa (0.81)
+2026-02-03 17:32:20 - iqro - INFO - Dummy prediction: Alif (confidence: 0.81)
+2026-02-03 17:32:20 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:32:20 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Alif (0.81)
+2026-02-03 17:32:20 - iqro - INFO - Dummy prediction: Alif (confidence: 0.79)
+2026-02-03 17:32:20 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:32:20 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Alif (0.79)
+2026-02-03 17:32:21 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.86)
+2026-02-03 17:32:21 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:32:21 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Tsa (0.86)
+2026-02-03 17:32:40 - iqro - INFO - Dummy prediction: Ba (confidence: 0.90)
+2026-02-03 17:32:40 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:32:40 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ba (0.90)
+2026-02-03 17:32:40 - iqro - INFO - Dummy prediction: Jim (confidence: 0.82)
+2026-02-03 17:32:40 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:32:40 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Jim (0.82)
+2026-02-03 17:32:41 - iqro - INFO - Dummy prediction: Alif (confidence: 0.78)
+2026-02-03 17:32:41 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:32:41 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Alif (0.78)
+2026-02-03 17:32:42 - iqro - INFO - Dummy prediction: Alif (confidence: 0.75)
+2026-02-03 17:32:42 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:32:42 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Alif (0.75)
+2026-02-03 17:33:06 - iqro - INFO - Dummy prediction: Ba (confidence: 0.79)
+2026-02-03 17:33:06 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:33:06 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ba (0.79)
+2026-02-03 17:33:39 - iqro - INFO - Dummy prediction: Ta (confidence: 0.81)
+2026-02-03 17:33:39 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:33:39 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ta (0.81)
+2026-02-03 17:33:41 - iqro - INFO - Dummy prediction: Ta (confidence: 0.74)
+2026-02-03 17:33:41 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:33:41 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ta (0.74)
+2026-02-03 17:33:41 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.91)
+2026-02-03 17:33:41 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:33:41 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Tsa (0.91)
+2026-02-03 17:33:42 - iqro - INFO - Dummy prediction: Ba (confidence: 0.82)
+2026-02-03 17:33:42 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:33:42 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Ba (0.82)
+2026-02-03 17:33:42 - iqro - INFO - Dummy prediction: Jim (confidence: 0.85)
+2026-02-03 17:33:42 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:33:42 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Jim (0.85)
+2026-02-03 17:33:54 - iqro - INFO - Client session_m5lt7ehzhoml6gl6lo disconnected
+2026-02-03 17:33:54 - iqro - INFO - Client disconnected: session_m5lt7ehzhoml6gl6lo
+2026-02-03 17:34:26 - iqro - INFO - Client connected: session_m5lt7ehzhoml6gl6lo
+2026-02-03 17:34:26 - iqro - INFO - Session already exists: session_m5lt7ehzhoml6gl6lo
+2026-02-03 17:37:20 - iqro - INFO - Client session_m5lt7ehzhoml6gl6lo disconnected
+2026-02-03 17:37:20 - iqro - INFO - Client disconnected: session_m5lt7ehzhoml6gl6lo
+2026-02-03 17:37:21 - iqro - INFO - Shutting down application...
+2026-02-03 17:37:34 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 17:37:34 - iqro - INFO - Using dummy inference: True
+2026-02-03 17:37:34 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 17:37:34 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 17:37:34 - iqro - INFO - Database initialized
+2026-02-03 17:37:34 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 17:37:34 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:37:34 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:37:34 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:37:34 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:37:34 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:37:34 - iqro - INFO - TTS pre-generation complete
+2026-02-03 17:37:34 - iqro - INFO - Application startup complete
+2026-02-03 17:37:35 - iqro - INFO - Client connected: session_m5lt7ehzhoml6gl6lo
+2026-02-03 17:37:35 - iqro - INFO - Session already exists: session_m5lt7ehzhoml6gl6lo
+2026-02-03 17:37:37 - iqro - INFO - Dummy prediction: Jim (confidence: 0.79)
+2026-02-03 17:37:37 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:37:37 - iqro - INFO - Prediction sent to session_m5lt7ehzhoml6gl6lo: Jim (0.79)
+2026-02-03 17:37:39 - iqro - INFO - Client session_m5lt7ehzhoml6gl6lo disconnected
+2026-02-03 17:37:39 - iqro - INFO - Client disconnected: session_m5lt7ehzhoml6gl6lo
+2026-02-03 17:37:39 - iqro - INFO - Client connected: session_59w2ax4tyml6gsx1g
+2026-02-03 17:37:45 - iqro - INFO - Dummy prediction: Alif (confidence: 0.82)
+2026-02-03 17:37:45 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:37:45 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Alif (0.82)
+2026-02-03 17:37:46 - iqro - INFO - Dummy prediction: Ba (confidence: 0.74)
+2026-02-03 17:37:46 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:37:46 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Ba (0.74)
+2026-02-03 17:37:46 - iqro - INFO - Dummy prediction: Alif (confidence: 0.94)
+2026-02-03 17:37:46 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:37:46 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Alif (0.94)
+2026-02-03 17:38:01 - iqro - INFO - Dummy prediction: Ta (confidence: 0.80)
+2026-02-03 17:38:01 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:38:01 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Ta (0.80)
+2026-02-03 17:38:01 - iqro - INFO - Dummy prediction: Alif (confidence: 0.77)
+2026-02-03 17:38:01 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:38:01 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Alif (0.77)
+2026-02-03 17:38:11 - iqro - INFO - Dummy prediction: Jim (confidence: 0.88)
+2026-02-03 17:38:11 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:38:11 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Jim (0.88)
+2026-02-03 17:38:14 - iqro - INFO - Dummy prediction: Ta (confidence: 0.70)
+2026-02-03 17:38:14 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:38:14 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Ta (0.70)
+2026-02-03 17:38:38 - iqro - INFO - Dummy prediction: Alif (confidence: 0.84)
+2026-02-03 17:38:38 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:38:38 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Alif (0.84)
+2026-02-03 17:38:39 - iqro - INFO - Dummy prediction: Jim (confidence: 0.83)
+2026-02-03 17:38:39 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:38:39 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Jim (0.83)
+2026-02-03 17:38:41 - iqro - INFO - Dummy prediction: Jim (confidence: 0.82)
+2026-02-03 17:38:41 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:38:41 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Jim (0.82)
+2026-02-03 17:38:41 - iqro - INFO - Dummy prediction: Ta (confidence: 0.86)
+2026-02-03 17:38:41 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:38:41 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Ta (0.86)
+2026-02-03 17:38:42 - iqro - INFO - Dummy prediction: Alif (confidence: 0.82)
+2026-02-03 17:38:42 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:38:42 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Alif (0.82)
+2026-02-03 17:38:45 - iqro - INFO - Dummy prediction: Alif (confidence: 0.82)
+2026-02-03 17:38:45 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:38:45 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Alif (0.82)
+2026-02-03 17:38:46 - iqro - INFO - Dummy prediction: Ba (confidence: 0.73)
+2026-02-03 17:38:46 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 17:38:46 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Ba (0.73)
+2026-02-03 17:38:47 - iqro - INFO - Dummy prediction: Alif (confidence: 0.93)
+2026-02-03 17:38:47 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:38:47 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Alif (0.93)
+2026-02-03 17:38:49 - iqro - INFO - Dummy prediction: Alif (confidence: 0.78)
+2026-02-03 17:38:49 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:38:49 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Alif (0.78)
+2026-02-03 17:38:59 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.90)
+2026-02-03 17:38:59 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:38:59 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Tsa (0.90)
+2026-02-03 17:39:00 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.78)
+2026-02-03 17:39:00 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:39:00 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Tsa (0.78)
+2026-02-03 17:39:01 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.74)
+2026-02-03 17:39:01 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:39:01 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Tsa (0.74)
+2026-02-03 17:39:06 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.81)
+2026-02-03 17:39:06 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:39:06 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Tsa (0.81)
+2026-02-03 17:39:17 - iqro - INFO - Dummy prediction: Jim (confidence: 0.81)
+2026-02-03 17:39:17 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:39:17 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Jim (0.81)
+2026-02-03 17:39:18 - iqro - INFO - Dummy prediction: Ta (confidence: 0.81)
+2026-02-03 17:39:18 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:39:18 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Ta (0.81)
+2026-02-03 17:39:18 - iqro - INFO - Dummy prediction: Alif (confidence: 0.85)
+2026-02-03 17:39:18 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:39:18 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Alif (0.85)
+2026-02-03 17:39:21 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.88)
+2026-02-03 17:39:21 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:39:21 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Tsa (0.88)
+2026-02-03 17:39:22 - iqro - INFO - Dummy prediction: Alif (confidence: 0.93)
+2026-02-03 17:39:22 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 17:39:22 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Alif (0.93)
+2026-02-03 17:39:28 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.79)
+2026-02-03 17:39:28 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:39:28 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Tsa (0.79)
+2026-02-03 17:40:13 - iqro - INFO - Dummy prediction: Ta (confidence: 0.95)
+2026-02-03 17:40:13 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 17:40:13 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Ta (0.95)
+2026-02-03 17:40:13 - iqro - INFO - Dummy prediction: Jim (confidence: 0.82)
+2026-02-03 17:40:13 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 17:40:13 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Jim (0.82)
+2026-02-03 17:40:22 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.94)
+2026-02-03 17:40:22 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 17:40:22 - iqro - INFO - Prediction sent to session_59w2ax4tyml6gsx1g: Tsa (0.94)
+2026-02-03 17:40:35 - iqro - INFO - Client session_59w2ax4tyml6gsx1g disconnected
+2026-02-03 17:40:35 - iqro - INFO - Client disconnected: session_59w2ax4tyml6gsx1g
+2026-02-03 17:42:09 - iqro - INFO - Shutting down application...
+2026-02-03 19:48:49 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 19:48:49 - iqro - INFO - Using dummy inference: True
+2026-02-03 19:48:49 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 19:48:49 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 19:48:49 - iqro - INFO - Database initialized
+2026-02-03 19:48:49 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 19:48:49 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 19:48:49 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 19:48:49 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:48:49 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 19:48:49 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 19:48:49 - iqro - INFO - TTS pre-generation complete
+2026-02-03 19:48:49 - iqro - INFO - Application startup complete
+2026-02-03 19:49:22 - iqro - INFO - Shutting down application...
+2026-02-03 19:51:13 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-03 19:51:13 - iqro - INFO - Using dummy inference: True
+2026-02-03 19:51:13 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-03 19:51:13 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-03 19:51:13 - iqro - INFO - Database initialized
+2026-02-03 19:51:13 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-03 19:51:13 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 19:51:13 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 19:51:13 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:51:13 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 19:51:13 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 19:51:13 - iqro - INFO - TTS pre-generation complete
+2026-02-03 19:51:13 - iqro - INFO - Application startup complete
+2026-02-03 19:51:17 - iqro - INFO - Client connected: session_74xiqcifeb2ml6lkggu
+2026-02-03 19:51:20 - iqro - INFO - Dummy prediction: Alif (confidence: 0.71)
+2026-02-03 19:51:20 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 19:51:20 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Alif (0.71)
+2026-02-03 19:51:21 - iqro - INFO - Dummy prediction: Ba (confidence: 0.71)
+2026-02-03 19:51:21 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 19:51:21 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ba (0.71)
+2026-02-03 19:51:22 - iqro - INFO - Dummy prediction: Alif (confidence: 0.70)
+2026-02-03 19:51:22 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 19:51:22 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Alif (0.70)
+2026-02-03 19:51:26 - iqro - INFO - Dummy prediction: Jim (confidence: 0.88)
+2026-02-03 19:51:26 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 19:51:26 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Jim (0.88)
+2026-02-03 19:51:27 - iqro - INFO - Dummy prediction: Alif (confidence: 0.83)
+2026-02-03 19:51:27 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 19:51:27 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Alif (0.83)
+2026-02-03 19:51:28 - iqro - INFO - Dummy prediction: Jim (confidence: 0.74)
+2026-02-03 19:51:28 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 19:51:28 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Jim (0.74)
+2026-02-03 19:51:29 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.84)
+2026-02-03 19:51:29 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 19:51:29 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Tsa (0.84)
+2026-02-03 19:51:30 - iqro - INFO - Dummy prediction: Alif (confidence: 0.76)
+2026-02-03 19:51:30 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 19:51:30 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Alif (0.76)
+2026-02-03 19:51:30 - iqro - INFO - Dummy prediction: Jim (confidence: 0.91)
+2026-02-03 19:51:30 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 19:51:30 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Jim (0.91)
+2026-02-03 19:51:31 - iqro - INFO - Dummy prediction: Alif (confidence: 0.81)
+2026-02-03 19:51:31 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 19:51:31 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Alif (0.81)
+2026-02-03 19:51:34 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.74)
+2026-02-03 19:51:34 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 19:51:34 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Tsa (0.74)
+2026-02-03 19:51:35 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.85)
+2026-02-03 19:51:35 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 19:51:35 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Tsa (0.85)
+2026-02-03 19:51:35 - iqro - INFO - Dummy prediction: Ta (confidence: 0.79)
+2026-02-03 19:51:35 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:51:35 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ta (0.79)
+2026-02-03 19:51:36 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.78)
+2026-02-03 19:51:36 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 19:51:36 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Tsa (0.78)
+2026-02-03 19:51:36 - iqro - INFO - Dummy prediction: Jim (confidence: 0.79)
+2026-02-03 19:51:36 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 19:51:36 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Jim (0.79)
+2026-02-03 19:51:37 - iqro - INFO - Dummy prediction: Ba (confidence: 0.72)
+2026-02-03 19:51:37 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 19:51:37 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ba (0.72)
+2026-02-03 19:51:37 - iqro - INFO - Dummy prediction: Alif (confidence: 0.89)
+2026-02-03 19:51:37 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 19:51:37 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Alif (0.89)
+2026-02-03 19:51:38 - iqro - INFO - Dummy prediction: Ba (confidence: 0.91)
+2026-02-03 19:51:38 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 19:51:38 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ba (0.91)
+2026-02-03 19:51:38 - iqro - INFO - Dummy prediction: Alif (confidence: 0.80)
+2026-02-03 19:51:38 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 19:51:38 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Alif (0.80)
+2026-02-03 19:51:39 - iqro - INFO - Dummy prediction: Alif (confidence: 0.83)
+2026-02-03 19:51:39 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 19:51:39 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Alif (0.83)
+2026-02-03 19:51:39 - iqro - INFO - Dummy prediction: Ta (confidence: 0.73)
+2026-02-03 19:51:39 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:51:39 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ta (0.73)
+2026-02-03 19:51:40 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.92)
+2026-02-03 19:51:40 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 19:51:40 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Tsa (0.92)
+2026-02-03 19:51:40 - iqro - INFO - Dummy prediction: Ta (confidence: 0.80)
+2026-02-03 19:51:40 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:51:40 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ta (0.80)
+2026-02-03 19:51:41 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.89)
+2026-02-03 19:51:41 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 19:51:41 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Tsa (0.89)
+2026-02-03 19:51:41 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.90)
+2026-02-03 19:51:41 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 19:51:41 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Tsa (0.90)
+2026-02-03 19:52:26 - iqro - INFO - Dummy prediction: Ta (confidence: 0.94)
+2026-02-03 19:52:26 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:52:26 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ta (0.94)
+2026-02-03 19:52:26 - iqro - INFO - Dummy prediction: Ba (confidence: 0.89)
+2026-02-03 19:52:26 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 19:52:26 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ba (0.89)
+2026-02-03 19:52:27 - iqro - INFO - Dummy prediction: Jim (confidence: 0.81)
+2026-02-03 19:52:27 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 19:52:27 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Jim (0.81)
+2026-02-03 19:52:27 - iqro - INFO - Dummy prediction: Jim (confidence: 0.83)
+2026-02-03 19:52:27 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 19:52:27 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Jim (0.83)
+2026-02-03 19:52:28 - iqro - INFO - Dummy prediction: Ba (confidence: 0.83)
+2026-02-03 19:52:28 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 19:52:28 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ba (0.83)
+2026-02-03 19:52:28 - iqro - INFO - Dummy prediction: Ta (confidence: 0.85)
+2026-02-03 19:52:28 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:52:28 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ta (0.85)
+2026-02-03 19:52:29 - iqro - INFO - Dummy prediction: Jim (confidence: 0.82)
+2026-02-03 19:52:29 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 19:52:29 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Jim (0.82)
+2026-02-03 19:52:29 - iqro - INFO - Dummy prediction: Alif (confidence: 0.91)
+2026-02-03 19:52:29 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 19:52:29 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Alif (0.91)
+2026-02-03 19:52:30 - iqro - INFO - Dummy prediction: Alif (confidence: 0.88)
+2026-02-03 19:52:30 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 19:52:30 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Alif (0.88)
+2026-02-03 19:52:30 - iqro - INFO - Dummy prediction: Jim (confidence: 0.82)
+2026-02-03 19:52:30 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 19:52:30 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Jim (0.82)
+2026-02-03 19:52:59 - iqro - INFO - Dummy prediction: Ta (confidence: 0.85)
+2026-02-03 19:52:59 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:52:59 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ta (0.85)
+2026-02-03 19:52:59 - iqro - INFO - Dummy prediction: Alif (confidence: 0.81)
+2026-02-03 19:52:59 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 19:52:59 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Alif (0.81)
+2026-02-03 19:53:00 - iqro - INFO - Dummy prediction: Ta (confidence: 0.94)
+2026-02-03 19:53:00 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:53:00 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ta (0.94)
+2026-02-03 19:53:00 - iqro - INFO - Dummy prediction: Jim (confidence: 0.78)
+2026-02-03 19:53:00 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 19:53:00 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Jim (0.78)
+2026-02-03 19:53:01 - iqro - INFO - Dummy prediction: Ta (confidence: 0.72)
+2026-02-03 19:53:01 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:53:01 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ta (0.72)
+2026-02-03 19:53:01 - iqro - INFO - Dummy prediction: Jim (confidence: 0.79)
+2026-02-03 19:53:01 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 19:53:01 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Jim (0.79)
+2026-02-03 19:53:02 - iqro - INFO - Dummy prediction: Ba (confidence: 0.73)
+2026-02-03 19:53:02 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 19:53:02 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ba (0.73)
+2026-02-03 19:53:03 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.81)
+2026-02-03 19:53:03 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 19:53:03 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Tsa (0.81)
+2026-02-03 19:53:05 - iqro - INFO - Dummy prediction: Ba (confidence: 0.70)
+2026-02-03 19:53:05 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 19:53:05 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ba (0.70)
+2026-02-03 19:53:05 - iqro - INFO - Dummy prediction: Ta (confidence: 0.80)
+2026-02-03 19:53:05 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:53:05 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ta (0.80)
+2026-02-03 19:53:06 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.72)
+2026-02-03 19:53:06 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 19:53:06 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Tsa (0.72)
+2026-02-03 19:53:06 - iqro - INFO - Dummy prediction: Alif (confidence: 0.80)
+2026-02-03 19:53:06 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 19:53:06 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Alif (0.80)
+2026-02-03 19:53:07 - iqro - INFO - Dummy prediction: Ta (confidence: 0.73)
+2026-02-03 19:53:07 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:53:07 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ta (0.73)
+2026-02-03 19:53:07 - iqro - INFO - Dummy prediction: Jim (confidence: 0.80)
+2026-02-03 19:53:07 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 19:53:07 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Jim (0.80)
+2026-02-03 19:53:08 - iqro - INFO - Dummy prediction: Ta (confidence: 0.80)
+2026-02-03 19:53:08 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:53:08 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ta (0.80)
+2026-02-03 19:53:08 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.91)
+2026-02-03 19:53:08 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 19:53:08 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Tsa (0.91)
+2026-02-03 19:53:09 - iqro - INFO - Dummy prediction: Ba (confidence: 0.82)
+2026-02-03 19:53:09 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 19:53:09 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ba (0.82)
+2026-02-03 19:53:09 - iqro - INFO - Dummy prediction: Ta (confidence: 0.83)
+2026-02-03 19:53:09 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:53:09 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ta (0.83)
+2026-02-03 19:53:10 - iqro - INFO - Dummy prediction: Jim (confidence: 0.90)
+2026-02-03 19:53:10 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 19:53:10 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Jim (0.90)
+2026-02-03 19:53:10 - iqro - INFO - Dummy prediction: Ta (confidence: 0.83)
+2026-02-03 19:53:10 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:53:10 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ta (0.83)
+2026-02-03 19:53:11 - iqro - INFO - Dummy prediction: Ba (confidence: 0.85)
+2026-02-03 19:53:11 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 19:53:11 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ba (0.85)
+2026-02-03 19:53:11 - iqro - INFO - Dummy prediction: Ta (confidence: 0.74)
+2026-02-03 19:53:11 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:53:11 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ta (0.74)
+2026-02-03 19:53:12 - iqro - INFO - Dummy prediction: Alif (confidence: 0.78)
+2026-02-03 19:53:12 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 19:53:12 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Alif (0.78)
+2026-02-03 19:53:12 - iqro - INFO - Dummy prediction: Ba (confidence: 0.86)
+2026-02-03 19:53:12 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 19:53:12 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ba (0.86)
+2026-02-03 19:53:13 - iqro - INFO - Dummy prediction: Ta (confidence: 0.85)
+2026-02-03 19:53:13 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:53:13 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ta (0.85)
+2026-02-03 19:53:13 - iqro - INFO - Dummy prediction: Ta (confidence: 0.89)
+2026-02-03 19:53:13 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:53:13 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ta (0.89)
+2026-02-03 19:53:14 - iqro - INFO - Dummy prediction: Alif (confidence: 0.79)
+2026-02-03 19:53:14 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 19:53:14 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Alif (0.79)
+2026-02-03 19:53:14 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.74)
+2026-02-03 19:53:14 - iqro - INFO - Using cached audio for: Tsa
+2026-02-03 19:53:14 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Tsa (0.74)
+2026-02-03 19:53:15 - iqro - INFO - Dummy prediction: Ba (confidence: 0.88)
+2026-02-03 19:53:15 - iqro - INFO - Using cached audio for: Ba
+2026-02-03 19:53:15 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ba (0.88)
+2026-02-03 19:53:15 - iqro - INFO - Dummy prediction: Ta (confidence: 0.74)
+2026-02-03 19:53:15 - iqro - INFO - Using cached audio for: Ta
+2026-02-03 19:53:15 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Ta (0.74)
+2026-02-03 19:53:16 - iqro - INFO - Dummy prediction: Alif (confidence: 0.84)
+2026-02-03 19:53:16 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 19:53:16 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Alif (0.84)
+2026-02-03 19:53:16 - iqro - INFO - Dummy prediction: Jim (confidence: 0.73)
+2026-02-03 19:53:16 - iqro - INFO - Using cached audio for: Jim
+2026-02-03 19:53:16 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Jim (0.73)
+2026-02-03 19:53:17 - iqro - INFO - Dummy prediction: Alif (confidence: 0.78)
+2026-02-03 19:53:17 - iqro - INFO - Using cached audio for: Alif
+2026-02-03 19:53:17 - iqro - INFO - Prediction sent to session_74xiqcifeb2ml6lkggu: Alif (0.78)
+2026-02-03 19:53:40 - iqro - INFO - Client session_74xiqcifeb2ml6lkggu disconnected
+2026-02-03 19:53:40 - iqro - INFO - Client disconnected: session_74xiqcifeb2ml6lkggu
+2026-02-03 19:53:40 - iqro - INFO - Shutting down application...

@@ -1,0 +1,303 @@
+2026-02-04 14:56:22 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-04 14:56:22 - iqro - INFO - Using dummy inference: True
+2026-02-04 14:56:22 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-04 14:56:22 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-04 14:56:22 - iqro - INFO - Database initialized
+2026-02-04 14:56:22 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-04 14:56:22 - iqro - INFO - Using cached audio for: Alif
+2026-02-04 14:56:22 - iqro - INFO - Using cached audio for: Ba
+2026-02-04 14:56:22 - iqro - INFO - Using cached audio for: Ta
+2026-02-04 14:56:22 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 14:56:22 - iqro - INFO - Using cached audio for: Jim
+2026-02-04 14:56:22 - iqro - INFO - TTS pre-generation complete
+2026-02-04 14:56:22 - iqro - INFO - Application startup complete
+2026-02-04 14:56:41 - iqro - INFO - Client connected: session_dqplvls5rawml7qhr9s
+2026-02-04 14:56:43 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.83)
+2026-02-04 14:56:43 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 14:56:43 - iqro - INFO - Prediction sent to session_dqplvls5rawml7qhr9s: Tsa (0.83)
+2026-02-04 14:56:52 - iqro - INFO - Dummy prediction: Alif (confidence: 0.75)
+2026-02-04 14:56:52 - iqro - INFO - Using cached audio for: Alif
+2026-02-04 14:56:52 - iqro - INFO - Prediction sent to session_dqplvls5rawml7qhr9s: Alif (0.75)
+2026-02-04 14:56:53 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.75)
+2026-02-04 14:56:53 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 14:56:53 - iqro - INFO - Prediction sent to session_dqplvls5rawml7qhr9s: Tsa (0.75)
+2026-02-04 14:56:54 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.75)
+2026-02-04 14:56:54 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 14:56:54 - iqro - INFO - Prediction sent to session_dqplvls5rawml7qhr9s: Tsa (0.75)
+2026-02-04 14:56:54 - iqro - INFO - Dummy prediction: Jim (confidence: 0.87)
+2026-02-04 14:56:54 - iqro - INFO - Using cached audio for: Jim
+2026-02-04 14:56:54 - iqro - INFO - Prediction sent to session_dqplvls5rawml7qhr9s: Jim (0.87)
+2026-02-04 14:57:09 - iqro - INFO - Dummy prediction: Ta (confidence: 0.91)
+2026-02-04 14:57:09 - iqro - INFO - Using cached audio for: Ta
+2026-02-04 14:57:09 - iqro - INFO - Prediction sent to session_dqplvls5rawml7qhr9s: Ta (0.91)
+2026-02-04 14:57:10 - iqro - INFO - Dummy prediction: Ta (confidence: 0.72)
+2026-02-04 14:57:10 - iqro - INFO - Using cached audio for: Ta
+2026-02-04 14:57:10 - iqro - INFO - Prediction sent to session_dqplvls5rawml7qhr9s: Ta (0.72)
+2026-02-04 14:57:14 - iqro - INFO - Dummy prediction: Alif (confidence: 0.74)
+2026-02-04 14:57:14 - iqro - INFO - Using cached audio for: Alif
+2026-02-04 14:57:14 - iqro - INFO - Prediction sent to session_dqplvls5rawml7qhr9s: Alif (0.74)
+2026-02-04 14:57:18 - iqro - INFO - Dummy prediction: Ta (confidence: 0.86)
+2026-02-04 14:57:18 - iqro - INFO - Using cached audio for: Ta
+2026-02-04 14:57:18 - iqro - INFO - Prediction sent to session_dqplvls5rawml7qhr9s: Ta (0.86)
+2026-02-04 14:57:19 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.82)
+2026-02-04 14:57:19 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 14:57:19 - iqro - INFO - Prediction sent to session_dqplvls5rawml7qhr9s: Tsa (0.82)
+2026-02-04 14:57:53 - iqro - INFO - Dummy prediction: Alif (confidence: 0.84)
+2026-02-04 14:57:53 - iqro - INFO - Using cached audio for: Alif
+2026-02-04 14:57:53 - iqro - INFO - Prediction sent to session_dqplvls5rawml7qhr9s: Alif (0.84)
+2026-02-04 14:57:54 - iqro - INFO - Dummy prediction: Ba (confidence: 0.94)
+2026-02-04 14:57:54 - iqro - INFO - Using cached audio for: Ba
+2026-02-04 14:57:54 - iqro - INFO - Prediction sent to session_dqplvls5rawml7qhr9s: Ba (0.94)
+2026-02-04 14:57:54 - iqro - INFO - Dummy prediction: Alif (confidence: 0.80)
+2026-02-04 14:57:54 - iqro - INFO - Using cached audio for: Alif
+2026-02-04 14:57:54 - iqro - INFO - Prediction sent to session_dqplvls5rawml7qhr9s: Alif (0.80)
+2026-02-04 14:57:55 - iqro - INFO - Dummy prediction: Alif (confidence: 0.79)
+2026-02-04 14:57:55 - iqro - INFO - Using cached audio for: Alif
+2026-02-04 14:57:55 - iqro - INFO - Prediction sent to session_dqplvls5rawml7qhr9s: Alif (0.79)
+2026-02-04 14:57:55 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.82)
+2026-02-04 14:57:55 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 14:57:55 - iqro - INFO - Prediction sent to session_dqplvls5rawml7qhr9s: Tsa (0.82)
+2026-02-04 14:57:57 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.81)
+2026-02-04 14:57:57 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 14:57:57 - iqro - INFO - Prediction sent to session_dqplvls5rawml7qhr9s: Tsa (0.81)
+2026-02-04 14:57:57 - iqro - INFO - Dummy prediction: Jim (confidence: 0.91)
+2026-02-04 14:57:57 - iqro - INFO - Using cached audio for: Jim
+2026-02-04 14:57:57 - iqro - INFO - Prediction sent to session_dqplvls5rawml7qhr9s: Jim (0.91)
+2026-02-04 14:59:46 - iqro - INFO - Client session_dqplvls5rawml7qhr9s disconnected
+2026-02-04 14:59:46 - iqro - INFO - Client disconnected: session_dqplvls5rawml7qhr9s
+2026-02-04 14:59:49 - iqro - INFO - Client connected: session_hdl783i1zkml7qlso0
+2026-02-04 14:59:49 - iqro - INFO - Client session_hdl783i1zkml7qlso0 disconnected
+2026-02-04 14:59:49 - iqro - INFO - Client disconnected: session_hdl783i1zkml7qlso0
+2026-02-04 14:59:49 - iqro - INFO - Client connected: session_hdl783i1zkml7qlso0
+2026-02-04 14:59:49 - iqro - INFO - Session already exists: session_hdl783i1zkml7qlso0
+2026-02-04 14:59:53 - iqro - INFO - Client session_hdl783i1zkml7qlso0 disconnected
+2026-02-04 14:59:53 - iqro - INFO - Client disconnected: session_hdl783i1zkml7qlso0
+2026-02-04 14:59:53 - iqro - INFO - Client connected: session_29fuom03333ml7qlw4w
+2026-02-04 14:59:53 - iqro - ERROR - Error sending message to session_29fuom03333ml7qlw4w: 
+2026-02-04 14:59:53 - iqro - ERROR - WebSocket error for session_29fuom03333ml7qlw4w: WebSocket is not connected. Need to call "accept" first.
+2026-02-04 14:59:53 - iqro - INFO - Client disconnected: session_29fuom03333ml7qlw4w
+2026-02-04 14:59:53 - iqro - INFO - Client connected: session_29fuom03333ml7qlw4w
+2026-02-04 14:59:53 - iqro - INFO - Session already exists: session_29fuom03333ml7qlw4w
+2026-02-04 14:59:55 - iqro - INFO - Client session_29fuom03333ml7qlw4w disconnected
+2026-02-04 14:59:55 - iqro - INFO - Client disconnected: session_29fuom03333ml7qlw4w
+2026-02-04 14:59:55 - iqro - INFO - Client connected: session_yo2s8shuvohml7qlxft
+2026-02-04 14:59:55 - iqro - INFO - Client session_yo2s8shuvohml7qlxft disconnected
+2026-02-04 14:59:55 - iqro - INFO - Client disconnected: session_yo2s8shuvohml7qlxft
+2026-02-04 14:59:55 - iqro - INFO - Client connected: session_yo2s8shuvohml7qlxft
+2026-02-04 14:59:55 - iqro - INFO - Session already exists: session_yo2s8shuvohml7qlxft
+2026-02-04 15:00:00 - iqro - INFO - Client session_yo2s8shuvohml7qlxft disconnected
+2026-02-04 15:00:00 - iqro - INFO - Client disconnected: session_yo2s8shuvohml7qlxft
+2026-02-04 15:00:10 - iqro - INFO - Client connected: session_737w8oyzkukml7qm90m
+2026-02-04 15:00:10 - iqro - ERROR - Error sending message to session_737w8oyzkukml7qm90m: 
+2026-02-04 15:00:10 - iqro - ERROR - WebSocket error for session_737w8oyzkukml7qm90m: WebSocket is not connected. Need to call "accept" first.
+2026-02-04 15:00:10 - iqro - INFO - Client disconnected: session_737w8oyzkukml7qm90m
+2026-02-04 15:00:10 - iqro - INFO - Client connected: session_737w8oyzkukml7qm90m
+2026-02-04 15:00:10 - iqro - INFO - Session already exists: session_737w8oyzkukml7qm90m
+2026-02-04 15:00:12 - iqro - INFO - Client session_737w8oyzkukml7qm90m disconnected
+2026-02-04 15:00:12 - iqro - INFO - Client disconnected: session_737w8oyzkukml7qm90m
+2026-02-04 15:00:14 - iqro - INFO - Client connected: session_1385xhlm02qml7qmcel
+2026-02-04 15:00:14 - iqro - INFO - Client session_1385xhlm02qml7qmcel disconnected
+2026-02-04 15:00:14 - iqro - INFO - Client disconnected: session_1385xhlm02qml7qmcel
+2026-02-04 15:00:14 - iqro - INFO - Client connected: session_1385xhlm02qml7qmcel
+2026-02-04 15:00:14 - iqro - INFO - Session already exists: session_1385xhlm02qml7qmcel
+2026-02-04 15:00:17 - iqro - INFO - Client session_1385xhlm02qml7qmcel disconnected
+2026-02-04 15:00:17 - iqro - INFO - Client disconnected: session_1385xhlm02qml7qmcel
+2026-02-04 15:00:20 - iqro - INFO - Client connected: session_450ofnzufdwml7qmgpl
+2026-02-04 15:00:47 - iqro - INFO - Dummy prediction: Alif (confidence: 0.89)
+2026-02-04 15:00:47 - iqro - INFO - Using cached audio for: Alif
+2026-02-04 15:00:47 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Alif (0.89)
+2026-02-04 15:00:48 - iqro - INFO - Dummy prediction: Jim (confidence: 0.92)
+2026-02-04 15:00:48 - iqro - INFO - Using cached audio for: Jim
+2026-02-04 15:00:48 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Jim (0.92)
+2026-02-04 15:00:48 - iqro - INFO - Dummy prediction: Ba (confidence: 0.91)
+2026-02-04 15:00:48 - iqro - INFO - Using cached audio for: Ba
+2026-02-04 15:00:48 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ba (0.91)
+2026-02-04 15:00:49 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.91)
+2026-02-04 15:00:49 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 15:00:49 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Tsa (0.91)
+2026-02-04 15:00:54 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.75)
+2026-02-04 15:00:54 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 15:00:54 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Tsa (0.75)
+2026-02-04 15:00:55 - iqro - INFO - Dummy prediction: Alif (confidence: 0.94)
+2026-02-04 15:00:55 - iqro - INFO - Using cached audio for: Alif
+2026-02-04 15:00:55 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Alif (0.94)
+2026-02-04 15:00:56 - iqro - INFO - Dummy prediction: Ba (confidence: 0.82)
+2026-02-04 15:00:56 - iqro - INFO - Using cached audio for: Ba
+2026-02-04 15:00:56 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ba (0.82)
+2026-02-04 15:00:57 - iqro - INFO - Dummy prediction: Alif (confidence: 0.92)
+2026-02-04 15:00:57 - iqro - INFO - Using cached audio for: Alif
+2026-02-04 15:00:57 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Alif (0.92)
+2026-02-04 15:00:57 - iqro - INFO - Dummy prediction: Jim (confidence: 0.85)
+2026-02-04 15:00:57 - iqro - INFO - Using cached audio for: Jim
+2026-02-04 15:00:57 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Jim (0.85)
+2026-02-04 15:00:58 - iqro - INFO - Dummy prediction: Jim (confidence: 0.88)
+2026-02-04 15:00:58 - iqro - INFO - Using cached audio for: Jim
+2026-02-04 15:00:58 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Jim (0.88)
+2026-02-04 15:00:58 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.93)
+2026-02-04 15:00:58 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 15:00:58 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Tsa (0.93)
+2026-02-04 15:00:59 - iqro - INFO - Dummy prediction: Ba (confidence: 0.90)
+2026-02-04 15:00:59 - iqro - INFO - Using cached audio for: Ba
+2026-02-04 15:00:59 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ba (0.90)
+2026-02-04 15:00:59 - iqro - INFO - Dummy prediction: Jim (confidence: 0.71)
+2026-02-04 15:00:59 - iqro - INFO - Using cached audio for: Jim
+2026-02-04 15:00:59 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Jim (0.71)
+2026-02-04 15:01:00 - iqro - INFO - Dummy prediction: Ba (confidence: 0.86)
+2026-02-04 15:01:00 - iqro - INFO - Using cached audio for: Ba
+2026-02-04 15:01:00 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ba (0.86)
+2026-02-04 15:01:00 - iqro - INFO - Dummy prediction: Ba (confidence: 0.85)
+2026-02-04 15:01:00 - iqro - INFO - Using cached audio for: Ba
+2026-02-04 15:01:00 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ba (0.85)
+2026-02-04 15:01:02 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.72)
+2026-02-04 15:01:02 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 15:01:02 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Tsa (0.72)
+2026-02-04 15:01:03 - iqro - INFO - Dummy prediction: Ba (confidence: 0.78)
+2026-02-04 15:01:03 - iqro - INFO - Using cached audio for: Ba
+2026-02-04 15:01:03 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ba (0.78)
+2026-02-04 15:01:03 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.78)
+2026-02-04 15:01:03 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 15:01:03 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Tsa (0.78)
+2026-02-04 15:01:04 - iqro - INFO - Dummy prediction: Jim (confidence: 0.84)
+2026-02-04 15:01:04 - iqro - INFO - Using cached audio for: Jim
+2026-02-04 15:01:04 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Jim (0.84)
+2026-02-04 15:01:04 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.84)
+2026-02-04 15:01:04 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 15:01:04 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Tsa (0.84)
+2026-02-04 15:01:05 - iqro - INFO - Dummy prediction: Ta (confidence: 0.94)
+2026-02-04 15:01:05 - iqro - INFO - Using cached audio for: Ta
+2026-02-04 15:01:05 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ta (0.94)
+2026-02-04 15:01:05 - iqro - INFO - Dummy prediction: Ba (confidence: 0.72)
+2026-02-04 15:01:05 - iqro - INFO - Using cached audio for: Ba
+2026-02-04 15:01:05 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ba (0.72)
+2026-02-04 15:01:06 - iqro - INFO - Dummy prediction: Ba (confidence: 0.84)
+2026-02-04 15:01:06 - iqro - INFO - Using cached audio for: Ba
+2026-02-04 15:01:06 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ba (0.84)
+2026-02-04 15:01:06 - iqro - INFO - Dummy prediction: Alif (confidence: 0.75)
+2026-02-04 15:01:06 - iqro - INFO - Using cached audio for: Alif
+2026-02-04 15:01:06 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Alif (0.75)
+2026-02-04 15:01:07 - iqro - INFO - Dummy prediction: Ta (confidence: 0.82)
+2026-02-04 15:01:07 - iqro - INFO - Using cached audio for: Ta
+2026-02-04 15:01:07 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ta (0.82)
+2026-02-04 15:01:07 - iqro - INFO - Dummy prediction: Ta (confidence: 0.88)
+2026-02-04 15:01:07 - iqro - INFO - Using cached audio for: Ta
+2026-02-04 15:01:07 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ta (0.88)
+2026-02-04 15:01:08 - iqro - INFO - Dummy prediction: Ta (confidence: 0.82)
+2026-02-04 15:01:08 - iqro - INFO - Using cached audio for: Ta
+2026-02-04 15:01:08 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ta (0.82)
+2026-02-04 15:01:08 - iqro - INFO - Dummy prediction: Ba (confidence: 0.86)
+2026-02-04 15:01:08 - iqro - INFO - Using cached audio for: Ba
+2026-02-04 15:01:08 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ba (0.86)
+2026-02-04 15:01:09 - iqro - INFO - Dummy prediction: Ta (confidence: 0.91)
+2026-02-04 15:01:09 - iqro - INFO - Using cached audio for: Ta
+2026-02-04 15:01:09 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ta (0.91)
+2026-02-04 15:01:09 - iqro - INFO - Dummy prediction: Jim (confidence: 0.80)
+2026-02-04 15:01:09 - iqro - INFO - Using cached audio for: Jim
+2026-02-04 15:01:09 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Jim (0.80)
+2026-02-04 15:01:10 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.74)
+2026-02-04 15:01:10 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 15:01:10 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Tsa (0.74)
+2026-02-04 15:01:10 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.94)
+2026-02-04 15:01:10 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 15:01:10 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Tsa (0.94)
+2026-02-04 15:01:11 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.82)
+2026-02-04 15:01:11 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 15:01:11 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Tsa (0.82)
+2026-02-04 15:01:11 - iqro - INFO - Dummy prediction: Ba (confidence: 0.87)
+2026-02-04 15:01:11 - iqro - INFO - Using cached audio for: Ba
+2026-02-04 15:01:11 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ba (0.87)
+2026-02-04 15:01:12 - iqro - INFO - Dummy prediction: Ta (confidence: 0.86)
+2026-02-04 15:01:12 - iqro - INFO - Using cached audio for: Ta
+2026-02-04 15:01:12 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ta (0.86)
+2026-02-04 15:01:12 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.72)
+2026-02-04 15:01:12 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 15:01:12 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Tsa (0.72)
+2026-02-04 15:01:13 - iqro - INFO - Dummy prediction: Ta (confidence: 0.81)
+2026-02-04 15:01:13 - iqro - INFO - Using cached audio for: Ta
+2026-02-04 15:01:13 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ta (0.81)
+2026-02-04 15:01:13 - iqro - INFO - Dummy prediction: Ta (confidence: 0.82)
+2026-02-04 15:01:13 - iqro - INFO - Using cached audio for: Ta
+2026-02-04 15:01:13 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ta (0.82)
+2026-02-04 15:01:14 - iqro - INFO - Dummy prediction: Ta (confidence: 0.79)
+2026-02-04 15:01:14 - iqro - INFO - Using cached audio for: Ta
+2026-02-04 15:01:14 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ta (0.79)
+2026-02-04 15:01:14 - iqro - INFO - Dummy prediction: Jim (confidence: 0.86)
+2026-02-04 15:01:14 - iqro - INFO - Using cached audio for: Jim
+2026-02-04 15:01:14 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Jim (0.86)
+2026-02-04 15:01:15 - iqro - INFO - Dummy prediction: Ta (confidence: 0.82)
+2026-02-04 15:01:15 - iqro - INFO - Using cached audio for: Ta
+2026-02-04 15:01:15 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ta (0.82)
+2026-02-04 15:01:15 - iqro - INFO - Dummy prediction: Ba (confidence: 0.82)
+2026-02-04 15:01:15 - iqro - INFO - Using cached audio for: Ba
+2026-02-04 15:01:15 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ba (0.82)
+2026-02-04 15:02:04 - iqro - INFO - Dummy prediction: Ba (confidence: 0.70)
+2026-02-04 15:02:04 - iqro - INFO - Using cached audio for: Ba
+2026-02-04 15:02:04 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ba (0.70)
+2026-02-04 15:02:37 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.87)
+2026-02-04 15:02:37 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 15:02:37 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Tsa (0.87)
+2026-02-04 15:02:37 - iqro - INFO - Dummy prediction: Ta (confidence: 0.90)
+2026-02-04 15:02:37 - iqro - INFO - Using cached audio for: Ta
+2026-02-04 15:02:37 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ta (0.90)
+2026-02-04 15:02:38 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.86)
+2026-02-04 15:02:38 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 15:02:38 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Tsa (0.86)
+2026-02-04 15:02:38 - iqro - INFO - Dummy prediction: Alif (confidence: 0.93)
+2026-02-04 15:02:38 - iqro - INFO - Using cached audio for: Alif
+2026-02-04 15:02:38 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Alif (0.93)
+2026-02-04 15:02:39 - iqro - INFO - Dummy prediction: Jim (confidence: 0.86)
+2026-02-04 15:02:39 - iqro - INFO - Using cached audio for: Jim
+2026-02-04 15:02:39 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Jim (0.86)
+2026-02-04 15:02:40 - iqro - INFO - Dummy prediction: Ta (confidence: 0.86)
+2026-02-04 15:02:40 - iqro - INFO - Using cached audio for: Ta
+2026-02-04 15:02:40 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ta (0.86)
+2026-02-04 15:02:40 - iqro - INFO - Dummy prediction: Alif (confidence: 0.86)
+2026-02-04 15:02:40 - iqro - INFO - Using cached audio for: Alif
+2026-02-04 15:02:40 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Alif (0.86)
+2026-02-04 15:02:41 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.91)
+2026-02-04 15:02:41 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 15:02:41 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Tsa (0.91)
+2026-02-04 15:02:41 - iqro - INFO - Dummy prediction: Jim (confidence: 0.83)
+2026-02-04 15:02:41 - iqro - INFO - Using cached audio for: Jim
+2026-02-04 15:02:41 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Jim (0.83)
+2026-02-04 15:02:42 - iqro - INFO - Dummy prediction: Jim (confidence: 0.87)
+2026-02-04 15:02:42 - iqro - INFO - Using cached audio for: Jim
+2026-02-04 15:02:42 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Jim (0.87)
+2026-02-04 15:02:42 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.77)
+2026-02-04 15:02:42 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 15:02:42 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Tsa (0.77)
+2026-02-04 15:02:43 - iqro - INFO - Dummy prediction: Ba (confidence: 0.71)
+2026-02-04 15:02:43 - iqro - INFO - Using cached audio for: Ba
+2026-02-04 15:02:43 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ba (0.71)
+2026-02-04 15:02:44 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.79)
+2026-02-04 15:02:44 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 15:02:44 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Tsa (0.79)
+2026-02-04 15:02:44 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.75)
+2026-02-04 15:02:44 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 15:02:44 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Tsa (0.75)
+2026-02-04 15:02:45 - iqro - INFO - Dummy prediction: Ta (confidence: 0.90)
+2026-02-04 15:02:45 - iqro - INFO - Using cached audio for: Ta
+2026-02-04 15:02:45 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ta (0.90)
+2026-02-04 15:02:45 - iqro - INFO - Dummy prediction: Alif (confidence: 0.74)
+2026-02-04 15:02:45 - iqro - INFO - Using cached audio for: Alif
+2026-02-04 15:02:45 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Alif (0.74)
+2026-02-04 15:02:46 - iqro - INFO - Dummy prediction: Alif (confidence: 0.76)
+2026-02-04 15:02:46 - iqro - INFO - Using cached audio for: Alif
+2026-02-04 15:02:46 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Alif (0.76)
+2026-02-04 15:02:48 - iqro - INFO - Dummy prediction: Ta (confidence: 0.84)
+2026-02-04 15:02:48 - iqro - INFO - Using cached audio for: Ta
+2026-02-04 15:02:48 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Ta (0.84)
+2026-02-04 15:02:48 - iqro - INFO - Dummy prediction: Tsa (confidence: 0.77)
+2026-02-04 15:02:48 - iqro - INFO - Using cached audio for: Tsa
+2026-02-04 15:02:48 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Tsa (0.77)
+2026-02-04 15:02:49 - iqro - INFO - Dummy prediction: Jim (confidence: 0.93)
+2026-02-04 15:02:49 - iqro - INFO - Using cached audio for: Jim
+2026-02-04 15:02:49 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Jim (0.93)
+2026-02-04 15:02:49 - iqro - INFO - Dummy prediction: Jim (confidence: 0.80)
+2026-02-04 15:02:49 - iqro - INFO - Using cached audio for: Jim
+2026-02-04 15:02:49 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Jim (0.80)
+2026-02-04 15:02:53 - iqro - INFO - Dummy prediction: Alif (confidence: 0.89)
+2026-02-04 15:02:53 - iqro - INFO - Using cached audio for: Alif
+2026-02-04 15:02:53 - iqro - INFO - Prediction sent to session_450ofnzufdwml7qmgpl: Alif (0.89)
+2026-02-04 15:03:11 - iqro - INFO - Client session_450ofnzufdwml7qmgpl disconnected
+2026-02-04 15:03:11 - iqro - INFO - Client disconnected: session_450ofnzufdwml7qmgpl
+2026-02-04 15:03:11 - iqro - INFO - Shutting down application...

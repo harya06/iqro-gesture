@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+backend/venv/
+env/
+.vscode
+
+# Node
+node_modules/
+
+# Build
+build/
+dist/
+
+# Models
+*.pt
+*.pth
+*.onnx
+*.h5
+
+# Dataset
+dataset/
+data/
+
+# Database
+*.db
+
+# Video / Image raw
+*.mp4
+*.avi
+*.mov
+
+# OS
+.DS_Store
