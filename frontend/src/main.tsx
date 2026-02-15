@@ -1,10 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './App.css'
+import ReactDOM from 'react-dom/client';
+import AlFatihahApp from './AlFatihahApp';
 
+// Note: StrictMode removed intentionally — double-mount breaks camera/MediaPipe lifecycle
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  // <React.StrictMode>
-    <App />
-  // </React.StrictMode>,
-)
+  <AlFatihahApp />
+);

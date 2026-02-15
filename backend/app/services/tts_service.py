@@ -28,10 +28,11 @@ class TTSService:
         
         logger.info(f"TTS Service initialized. Enabled: {self.enabled}")
     
-    def _get_cache_path(self, text: str) -> Path:
-        """Generate cache file path based on text hash"""
-        text_hash = hashlib.md5(text.encode()).hexdigest()
-        return self.cache_dir / f"{text_hash}.mp3"
+    def _get_cache_path(self, label: str) -> Path:
+        """Generate cache file path based on label"""
+        # Sanitize label for filename
+        safe_label = "".join(c for c in label if c.isalnum() or c in ('-', '_')).lower()
+        return self.cache_dir / f"{safe_label}.mp3"
     
     def generate_audio(self, label: str) -> Tuple[Optional[str], Optional[str]]:
         """
@@ -52,7 +53,7 @@ class TTSService:
             arabic_text = self.pronunciation_map.get(label, label)
             
             # Check cache
-            cache_path = self._get_cache_path(arabic_text)
+            cache_path = self._get_cache_path(label)
             
             if cache_path.exists():
                 logger.info(f"Using cached audio for: {label}")
@@ -96,7 +97,7 @@ class TTSService:
             URL path to audio file
         """
         arabic_text = self.pronunciation_map.get(label, label)
-        cache_path = self._get_cache_path(arabic_text)
+        cache_path = self._get_cache_path(label)
         
         if cache_path.exists():
             return f"/audio/{cache_path.name}"

@@ -38,14 +38,26 @@ class Settings(BaseSettings):
     CONFIDENCE_THRESHOLD: float = 0.5
     
     # TTS
-    TTS_LANGUAGE: str = "ar"
+    TTS_LANGUAGE: str = "id"
     TTS_ENABLED: bool = True
     
     # CORS
     CORS_ORIGINS: List[str] = ["http://localhost:5173", "http://localhost:3000", "http://127.0.0.1:5173"]
     
     # Label mapping
-    LABELS: List[str] = ["Alif", "Ba", "Ta", "Tsa", "Jim"]
+    # Combined Iqro (Hijaiyah) + Al-Fatihah Chunks
+    LABELS: List[str] = [
+        # Hijaiyah
+        "Alif", "Ba", "Ta", "Tsa", "Jim", 
+        # Al-Fatihah Chunks
+        "bis", "mil", "lah", "hir", "rah", "maa", "nir", "ra", "hiim",
+        "al", "ham", "du", "lil", "rab", "bil", "aa", "la", "miin",
+        "ar", "li", "ki", "yaw", "mi", "dii", "ni",
+        "iy", "yaa", "ka", "na", "bu", "wa", "nas", "ta", "iin",
+        "ih", "di", "naa", "as", "shi", "raa", "tal", "mus", "qiim",
+        "dhi", "an", "am", "a", "lai", "him", "ghai", "ril", "magh", 
+        "duu", "bi", "lad", "dhaal", "liin"
+    ]
     ARABIC_LABELS: dict = {
         "Alif": "أَلِف",
         "Ba": "بَاء",
@@ -54,11 +66,12 @@ class Settings(BaseSettings):
         "Jim": "جِيم"
     }
     ARABIC_PRONUNCIATION: dict = {
-        "Alif": "أَلِف",
-        "Ba": "بَا",
-        "Ta": "تَا",
-        "Tsa": "ثَا",
-        "Jim": "جِيم"
+        # Defaults to label name for Al-Fatihah if not found
+        "Alif": "Alif",
+        "Ba": "Ba",
+        "Ta": "Ta",
+        "Tsa": "Tsa",
+        "Jim": "jim"
     }
     
     class Config:

@@ -1,0 +1,474 @@
+2026-02-15 20:45:56 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-15 20:45:56 - iqro - INFO - Using dummy inference: True
+2026-02-15 20:45:56 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-15 20:45:56 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-15 20:45:56 - iqro - INFO - Generating TTS audio for: Alif (Alif)
+2026-02-15 20:45:58 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/alif.mp3
+2026-02-15 20:45:58 - iqro - INFO - Generating TTS audio for: Ba (Ba)
+2026-02-15 20:45:59 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/ba.mp3
+2026-02-15 20:45:59 - iqro - INFO - Generating TTS audio for: Ta (Ta)
+2026-02-15 20:46:00 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/ta.mp3
+2026-02-15 20:46:00 - iqro - INFO - Generating TTS audio for: Tsa (Tsa)
+2026-02-15 20:46:00 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/tsa.mp3
+2026-02-15 20:46:00 - iqro - INFO - Generating TTS audio for: Jim (jim)
+2026-02-15 20:46:00 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/jim.mp3
+2026-02-15 20:46:00 - iqro - INFO - Generating TTS audio for: bis (bis)
+2026-02-15 20:46:00 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/bis.mp3
+2026-02-15 20:46:00 - iqro - INFO - Generating TTS audio for: mil (mil)
+2026-02-15 20:46:01 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/mil.mp3
+2026-02-15 20:46:01 - iqro - INFO - Generating TTS audio for: lah (lah)
+2026-02-15 20:46:01 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/lah.mp3
+2026-02-15 20:46:01 - iqro - INFO - Generating TTS audio for: hir (hir)
+2026-02-15 20:46:02 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/hir.mp3
+2026-02-15 20:46:02 - iqro - INFO - Generating TTS audio for: rah (rah)
+2026-02-15 20:46:02 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/rah.mp3
+2026-02-15 20:46:02 - iqro - INFO - Generating TTS audio for: maa (maa)
+2026-02-15 20:46:02 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/maa.mp3
+2026-02-15 20:46:02 - iqro - INFO - Generating TTS audio for: nir (nir)
+2026-02-15 20:46:03 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/nir.mp3
+2026-02-15 20:46:03 - iqro - INFO - Generating TTS audio for: ra (ra)
+2026-02-15 20:46:03 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/ra.mp3
+2026-02-15 20:46:03 - iqro - INFO - Generating TTS audio for: hiim (hiim)
+2026-02-15 20:46:04 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/hiim.mp3
+2026-02-15 20:46:04 - iqro - INFO - Generating TTS audio for: al (al)
+2026-02-15 20:46:04 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/al.mp3
+2026-02-15 20:46:04 - iqro - INFO - Generating TTS audio for: ham (ham)
+2026-02-15 20:46:04 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/ham.mp3
+2026-02-15 20:46:04 - iqro - INFO - Generating TTS audio for: du (du)
+2026-02-15 20:46:05 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/du.mp3
+2026-02-15 20:46:05 - iqro - INFO - Generating TTS audio for: lil (lil)
+2026-02-15 20:46:05 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/lil.mp3
+2026-02-15 20:46:05 - iqro - INFO - Generating TTS audio for: rab (rab)
+2026-02-15 20:46:06 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/rab.mp3
+2026-02-15 20:46:06 - iqro - INFO - Generating TTS audio for: bil (bil)
+2026-02-15 20:46:06 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/bil.mp3
+2026-02-15 20:46:06 - iqro - INFO - Generating TTS audio for: aa (aa)
+2026-02-15 20:46:07 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/aa.mp3
+2026-02-15 20:46:07 - iqro - INFO - Generating TTS audio for: la (la)
+2026-02-15 20:46:07 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/la.mp3
+2026-02-15 20:46:07 - iqro - INFO - Generating TTS audio for: miin (miin)
+2026-02-15 20:46:08 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/miin.mp3
+2026-02-15 20:46:08 - iqro - INFO - Generating TTS audio for: ar (ar)
+2026-02-15 20:46:11 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/ar.mp3
+2026-02-15 20:46:11 - iqro - INFO - Generating TTS audio for: li (li)
+2026-02-15 20:46:12 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/li.mp3
+2026-02-15 20:46:12 - iqro - INFO - Generating TTS audio for: ki (ki)
+2026-02-15 20:46:12 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/ki.mp3
+2026-02-15 20:46:12 - iqro - INFO - Generating TTS audio for: yaw (yaw)
+2026-02-15 20:46:13 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/yaw.mp3
+2026-02-15 20:46:13 - iqro - INFO - Generating TTS audio for: mi (mi)
+2026-02-15 20:46:14 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/mi.mp3
+2026-02-15 20:46:14 - iqro - INFO - Generating TTS audio for: dii (dii)
+2026-02-15 20:46:14 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/dii.mp3
+2026-02-15 20:46:14 - iqro - INFO - Generating TTS audio for: ni (ni)
+2026-02-15 20:46:15 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/ni.mp3
+2026-02-15 20:46:15 - iqro - INFO - Generating TTS audio for: iy (iy)
+2026-02-15 20:46:16 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/iy.mp3
+2026-02-15 20:46:16 - iqro - INFO - Generating TTS audio for: yaa (yaa)
+2026-02-15 20:46:17 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/yaa.mp3
+2026-02-15 20:46:17 - iqro - INFO - Generating TTS audio for: ka (ka)
+2026-02-15 20:46:26 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/ka.mp3
+2026-02-15 20:46:26 - iqro - INFO - Generating TTS audio for: na (na)
+2026-02-15 20:46:27 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/na.mp3
+2026-02-15 20:46:27 - iqro - INFO - Generating TTS audio for: bu (bu)
+2026-02-15 20:46:28 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/bu.mp3
+2026-02-15 20:46:28 - iqro - INFO - Generating TTS audio for: wa (wa)
+2026-02-15 20:46:29 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/wa.mp3
+2026-02-15 20:46:29 - iqro - INFO - Generating TTS audio for: nas (nas)
+2026-02-15 20:46:30 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/nas.mp3
+2026-02-15 20:46:30 - iqro - INFO - Using cached audio for: ta
+2026-02-15 20:46:30 - iqro - INFO - Generating TTS audio for: iin (iin)
+2026-02-15 20:46:31 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/iin.mp3
+2026-02-15 20:46:31 - iqro - INFO - Generating TTS audio for: ih (ih)
+2026-02-15 20:46:32 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/ih.mp3
+2026-02-15 20:46:32 - iqro - INFO - Generating TTS audio for: di (di)
+2026-02-15 20:46:33 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/di.mp3
+2026-02-15 20:46:33 - iqro - INFO - Generating TTS audio for: naa (naa)
+2026-02-15 20:46:35 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/naa.mp3
+2026-02-15 20:46:35 - iqro - INFO - Generating TTS audio for: as (as)
+2026-02-15 20:46:35 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/as.mp3
+2026-02-15 20:46:35 - iqro - INFO - Generating TTS audio for: shi (shi)
+2026-02-15 20:46:36 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/shi.mp3
+2026-02-15 20:46:36 - iqro - INFO - Generating TTS audio for: raa (raa)
+2026-02-15 20:46:37 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/raa.mp3
+2026-02-15 20:46:37 - iqro - INFO - Generating TTS audio for: tal (tal)
+2026-02-15 20:46:39 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/tal.mp3
+2026-02-15 20:46:39 - iqro - INFO - Generating TTS audio for: mus (mus)
+2026-02-15 20:46:39 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/mus.mp3
+2026-02-15 20:46:39 - iqro - INFO - Generating TTS audio for: qiim (qiim)
+2026-02-15 20:46:40 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/qiim.mp3
+2026-02-15 20:46:40 - iqro - INFO - Generating TTS audio for: dhi (dhi)
+2026-02-15 20:46:41 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/dhi.mp3
+2026-02-15 20:46:41 - iqro - INFO - Generating TTS audio for: an (an)
+2026-02-15 20:46:41 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/an.mp3
+2026-02-15 20:46:41 - iqro - INFO - Generating TTS audio for: am (am)
+2026-02-15 20:46:42 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/am.mp3
+2026-02-15 20:46:42 - iqro - INFO - Generating TTS audio for: a (a)
+2026-02-15 20:46:43 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/a.mp3
+2026-02-15 20:46:43 - iqro - INFO - Generating TTS audio for: lai (lai)
+2026-02-15 20:46:44 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/lai.mp3
+2026-02-15 20:46:44 - iqro - INFO - Generating TTS audio for: him (him)
+2026-02-15 20:46:46 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/him.mp3
+2026-02-15 20:46:46 - iqro - INFO - Generating TTS audio for: ghai (ghai)
+2026-02-15 20:46:48 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/ghai.mp3
+2026-02-15 20:46:48 - iqro - INFO - Generating TTS audio for: ril (ril)
+2026-02-15 20:46:49 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/ril.mp3
+2026-02-15 20:46:49 - iqro - INFO - Generating TTS audio for: magh (magh)
+2026-02-15 20:46:50 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/magh.mp3
+2026-02-15 20:46:50 - iqro - INFO - Generating TTS audio for: duu (duu)
+2026-02-15 20:46:51 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/duu.mp3
+2026-02-15 20:46:51 - iqro - INFO - Generating TTS audio for: bi (bi)
+2026-02-15 20:46:51 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/bi.mp3
+2026-02-15 20:46:51 - iqro - INFO - Generating TTS audio for: lad (lad)
+2026-02-15 20:46:52 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/lad.mp3
+2026-02-15 20:46:52 - iqro - INFO - Generating TTS audio for: dhaal (dhaal)
+2026-02-15 20:46:53 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/dhaal.mp3
+2026-02-15 20:46:53 - iqro - INFO - Generating TTS audio for: liin (liin)
+2026-02-15 20:46:54 - iqro - INFO - Audio cached at: /home/harya/iqro-gesture/backend/audio_cache/liin.mp3
+2026-02-15 20:46:54 - iqro - INFO - TTS pre-generation complete
+2026-02-15 20:50:38 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-15 20:50:38 - iqro - INFO - Using dummy inference: True
+2026-02-15 20:50:38 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-15 20:50:38 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-15 20:50:38 - iqro - INFO - Database initialized
+2026-02-15 20:50:38 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: Alif
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: Ba
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: Ta
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: Tsa
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: Jim
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: bis
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: mil
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: lah
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: hir
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: rah
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: maa
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: nir
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: ra
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: hiim
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: al
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: ham
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: du
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: lil
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: rab
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: bil
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: aa
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: la
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: miin
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: ar
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: li
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: ki
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: yaw
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: mi
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: dii
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: ni
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: iy
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: yaa
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: ka
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: na
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: bu
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: wa
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: nas
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: ta
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: iin
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: ih
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: di
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: naa
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: as
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: shi
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: raa
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: tal
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: mus
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: qiim
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: dhi
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: an
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: am
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: a
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: lai
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: him
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: ghai
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: ril
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: magh
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: duu
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: bi
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: lad
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: dhaal
+2026-02-15 20:50:38 - iqro - INFO - Using cached audio for: liin
+2026-02-15 20:50:38 - iqro - INFO - TTS pre-generation complete
+2026-02-15 20:50:38 - iqro - INFO - Application startup complete
+2026-02-15 21:01:22 - iqro - INFO - Shutting down application...
+2026-02-15 21:01:37 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-15 21:01:37 - iqro - INFO - Using dummy inference: True
+2026-02-15 21:01:37 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-15 21:01:37 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: Alif
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: Ba
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: Ta
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: Tsa
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: Jim
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: bis
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: mil
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: lah
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: hir
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: rah
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: maa
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: nir
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: ra
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: hiim
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: al
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: ham
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: du
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: lil
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: rab
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: bil
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: aa
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: la
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: miin
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: ar
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: li
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: ki
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: yaw
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: mi
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: dii
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: ni
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: iy
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: yaa
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: ka
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: na
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: bu
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: wa
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: nas
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: ta
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: iin
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: ih
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: di
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: naa
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: as
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: shi
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: raa
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: tal
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: mus
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: qiim
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: dhi
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: an
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: am
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: a
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: lai
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: him
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: ghai
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: ril
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: magh
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: duu
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: bi
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: lad
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: dhaal
+2026-02-15 21:01:37 - iqro - INFO - Using cached audio for: liin
+2026-02-15 21:01:37 - iqro - INFO - TTS pre-generation complete
+2026-02-15 21:02:44 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-15 21:02:44 - iqro - INFO - Using dummy inference: True
+2026-02-15 21:02:44 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-15 21:02:44 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: Alif
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: Ba
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: Ta
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: Tsa
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: Jim
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: bis
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: mil
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: lah
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: hir
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: rah
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: maa
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: nir
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: ra
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: hiim
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: al
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: ham
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: du
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: lil
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: rab
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: bil
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: aa
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: la
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: miin
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: ar
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: li
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: ki
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: yaw
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: mi
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: dii
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: ni
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: iy
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: yaa
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: ka
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: na
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: bu
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: wa
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: nas
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: ta
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: iin
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: ih
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: di
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: naa
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: as
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: shi
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: raa
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: tal
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: mus
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: qiim
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: dhi
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: an
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: am
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: a
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: lai
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: him
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: ghai
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: ril
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: magh
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: duu
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: bi
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: lad
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: dhaal
+2026-02-15 21:02:44 - iqro - INFO - Using cached audio for: liin
+2026-02-15 21:02:44 - iqro - INFO - TTS pre-generation complete
+2026-02-15 21:03:13 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-15 21:03:13 - iqro - INFO - Using dummy inference: True
+2026-02-15 21:03:13 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-15 21:03:13 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-15 21:03:13 - iqro - INFO - Database initialized
+2026-02-15 21:03:13 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: Alif
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: Ba
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: Ta
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: Tsa
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: Jim
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: bis
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: mil
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: lah
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: hir
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: rah
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: maa
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: nir
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: ra
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: hiim
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: al
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: ham
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: du
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: lil
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: rab
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: bil
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: aa
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: la
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: miin
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: ar
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: li
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: ki
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: yaw
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: mi
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: dii
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: ni
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: iy
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: yaa
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: ka
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: na
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: bu
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: wa
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: nas
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: ta
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: iin
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: ih
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: di
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: naa
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: as
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: shi
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: raa
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: tal
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: mus
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: qiim
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: dhi
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: an
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: am
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: a
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: lai
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: him
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: ghai
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: ril
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: magh
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: duu
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: bi
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: lad
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: dhaal
+2026-02-15 21:03:13 - iqro - INFO - Using cached audio for: liin
+2026-02-15 21:03:13 - iqro - INFO - TTS pre-generation complete
+2026-02-15 21:03:13 - iqro - INFO - Application startup complete
+2026-02-15 21:11:08 - iqro - INFO - Shutting down application...
+2026-02-15 21:11:14 - iqro - INFO - Inference service initialized. Device: cuda
+2026-02-15 21:11:14 - iqro - INFO - Using dummy inference: True
+2026-02-15 21:11:14 - iqro - INFO - TTS Service initialized. Enabled: True
+2026-02-15 21:11:14 - iqro - INFO - Starting Iqro Gesture Recognition API...
+2026-02-15 21:11:14 - iqro - INFO - Database initialized
+2026-02-15 21:11:14 - iqro - INFO - Pre-generating TTS audio for all labels...
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: Alif
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: Ba
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: Ta
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: Tsa
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: Jim
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: bis
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: mil
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: lah
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: hir
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: rah
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: maa
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: nir
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: ra
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: hiim
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: al
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: ham
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: du
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: lil
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: rab
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: bil
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: aa
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: la
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: miin
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: ar
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: li
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: ki
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: yaw
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: mi
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: dii
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: ni
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: iy
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: yaa
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: ka
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: na
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: bu
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: wa
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: nas
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: ta
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: iin
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: ih
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: di
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: naa
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: as
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: shi
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: raa
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: tal
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: mus
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: qiim
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: dhi
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: an
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: am
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: a
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: lai
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: him
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: ghai
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: ril
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: magh
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: duu
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: bi
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: lad
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: dhaal
+2026-02-15 21:11:14 - iqro - INFO - Using cached audio for: liin
+2026-02-15 21:11:14 - iqro - INFO - TTS pre-generation complete
+2026-02-15 21:11:14 - iqro - INFO - Application startup complete

@@ -9,7 +9,6 @@ from contextlib import asynccontextmanager
 from .config import settings
 from .database.db import init_db
 from .api.routes import router
-from .api.auth import router as auth_router
 from .api.websocket import websocket_router
 from .services.tts_service import tts_service
 from .utils.logger import logger
@@ -63,7 +62,6 @@ app.mount(
 
 # Include routers
 app.include_router(router, prefix="/api", tags=["API"])
-app.include_router(auth_router, prefix="/api", tags=["Authentication"])
 app.include_router(websocket_router, tags=["WebSocket"])
 
 
