@@ -11,7 +11,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ engineState, surahComplete })
     return (
         <div className="progress-section">
             <div className="progress-header">
-                <span className="progress-title">📿 Progres Al-Fatihah</span>
+                <span className="progress-title">Progres Al-Fatihah</span>
                 <span className="progress-percent">{(engineState.progress * 100).toFixed(0)}%</span>
             </div>
             <div className="progress-track">
@@ -25,7 +25,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ engineState, surahComplete })
                     <div
                         key={i}
                         className={`ayat-dot ${i < engineState.currentAyat ? 'dot-done' :
-                                i === engineState.currentAyat ? 'dot-active' : 'dot-pending'
+                            i === engineState.currentAyat ? 'dot-active' : 'dot-pending'
                             }`}
                         title={`Ayat ${ayat.ayat_number}`}
                     >

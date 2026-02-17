@@ -88,7 +88,7 @@ const GestureHUD: React.FC<GestureHUDProps> = ({ decoded, stabilityProgress, eng
             {/* No hands detected */}
             {!decoded?.rightHand && !decoded?.leftHand && (
                 <div className="hud-no-hand">
-                    <p>👋 Angkat kedua tangan di depan kamera</p>
+                    <p>Angkat kedua tangan di depan kamera</p>
                 </div>
             )}
         </div>

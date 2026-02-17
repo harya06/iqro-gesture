@@ -71,8 +71,8 @@ const CameraPanel: React.FC<CameraPanelProps> = ({
             {/* Two-hand instruction overlay */}
             {mediapipeReady && (
                 <div className="camera-overlay-badges">
-                    <div className="cam-badge right-badge">🤚 Kanan = Zona</div>
-                    <div className="cam-badge left-badge">✋ Kiri = Harakat</div>
+                    <div className="cam-badge right-badge">Kanan = Zona</div>
+                    <div className="cam-badge left-badge">Kiri = Harakat</div>
                 </div>
             )}
         </div>

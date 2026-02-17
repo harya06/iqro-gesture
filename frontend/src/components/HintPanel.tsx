@@ -14,7 +14,7 @@ const HintPanel: React.FC<HintPanelProps> = ({ engineState, onDismiss }) => {
     return (
         <div className="hint-panel">
             <div className="hint-header">
-                <span>💡 Petunjuk</span>
+                <span>Petunjuk</span>
                 <button className="hint-dismiss" onClick={onDismiss}>✕</button>
             </div>
             <div className="hint-content">

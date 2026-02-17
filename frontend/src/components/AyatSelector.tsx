@@ -11,8 +11,8 @@ const AyatSelector: React.FC<AyatSelectorProps> = ({ currentAyat, onSelect, onRe
     return (
         <div className="ayat-selector">
             <div className="selector-header">
-                <span>📌 Pilih Ayat</span>
-                <button className="btn-ghost" onClick={onReset}>⟳ Reset</button>
+                <span>Pilih Ayat</span>
+                <button className="btn-ghost" onClick={onReset}>Reset</button>
             </div>
             <div className="selector-grid">
                 {AYAT.map((ayat, i) => (

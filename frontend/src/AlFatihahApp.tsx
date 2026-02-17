@@ -74,8 +74,8 @@ const AlFatihahApp = () => {
         w: number, h: number
     ) => {
         const hands = [
-            { data: decoded.rightHand, label: 'Right', text: '🤚 Kanan (Zona)' },
-            { data: decoded.leftHand, label: 'Left', text: '✋ Kiri (Harakat)' }
+            { data: decoded.rightHand, label: 'Right', text: 'Kanan (Zona)' },
+            { data: decoded.leftHand, label: 'Left', text: 'Kiri (Harakat)' }
         ];
 
         for (const hand of hands) {
@@ -321,7 +321,7 @@ const AlFatihahApp = () => {
                     }
                 });
 
-                setStatus('Memuat model AI (10-30 detik)...');
+                setStatus('Memuat model AI...');
                 if (videoRef.current) {
                     await hands.send({ image: videoRef.current });
                 }
@@ -482,10 +482,10 @@ const AlFatihahApp = () => {
 
                     {/* Legend */}
                     <div className="legend-panel">
-                        <h3>📖 Panduan Gesture</h3>
+                        <h3>Panduan Gesture</h3>
                         <div className="legend-grid">
                             <div className="legend-section">
-                                <h4>🤚 Tangan Kanan – Zona Makhraj</h4>
+                                <h4>Tangan Kanan – Zona Makhraj</h4>
                                 <div className="legend-items">
                                     {Object.entries(ZONA_MAKHRAJ).map(([num, z]) => (
                                         <div key={num} className="legend-item">
@@ -496,7 +496,7 @@ const AlFatihahApp = () => {
                                 </div>
                             </div>
                             <div className="legend-section">
-                                <h4>✋ Tangan Kiri – Harakat</h4>
+                                <h4>Tangan Kiri – Harakat</h4>
                                 <div className="legend-items">
                                     {Object.entries(HARAKAT_DATA).map(([num, h]) => (
                                         <div key={num} className="legend-item">

@@ -14,10 +14,10 @@ const GestureIndicator: React.FC<GestureIndicatorProps> = ({
 }) => {
   const getStateText = (): string => {
     switch (detectionState) {
-      case 'detecting': return '🔍 Detecting...';
-      case 'speaking': return '🔊 Speaking...';
-      case 'waiting': return '✋ Show your hand';
-      default: return '⏳ Idle';
+      case 'detecting': return 'Detecting...';
+      case 'speaking': return 'Speaking...';
+      case 'waiting': return 'Show your hand';
+      default: return 'Idle...';
     }
   };
 
@@ -34,24 +34,24 @@ const GestureIndicator: React.FC<GestureIndicatorProps> = ({
       <div className={`detection-state ${getStateClass()}`}>
         {getStateText()}
       </div>
-      
+
       {prediction ? (
         <div className="prediction-display">
           <div className="arabic-letter">
             {prediction.arabic}
           </div>
-          
+
           <div className="latin-label">
             {prediction.label}
           </div>
-          
+
           <div className="confidence-bar">
-            <div 
+            <div
               className="confidence-fill"
               style={{ width: `${prediction.confidence * 100}%` }}
             />
           </div>
-          
+
           <div className="confidence-text">
             Confidence: {(prediction.confidence * 100).toFixed(1)}%
           </div>

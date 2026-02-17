@@ -198,9 +198,9 @@ const CameraView: React.FC<CameraViewProps> = ({
 
         hands.onResults(onResults);
 
-        setStatus("Loading AI model (this may take 10-30 seconds)...");
+        setStatus("Loading AI model...");
         console.log("Sending first frame to initialize model...");
-        
+
         if (videoRef.current) {
           await hands.send({ image: videoRef.current });
         }
@@ -368,7 +368,7 @@ const CameraView: React.FC<CameraViewProps> = ({
               <span>{getStatusText()}</span>
             </div>
             <div className="status-badge">
-              <span>{handDetected ? "🖐️ Hand Detected" : "✋ No Hand"}</span>
+              <span>{handDetected ? "Hand Detected" : "No Hand"}</span>
             </div>
           </div>
           <div className="fps-counter">{fps} FPS</div>

@@ -30,7 +30,7 @@ const AyatDisplay: React.FC<AyatDisplayProps> = ({ engineState, chunks, flashRes
                     <span
                         key={`${engineState.currentAyat}-${i}`}
                         className={`chunk-pill ${c.status} ${c.status === 'current' && flashResult === 'correct' ? 'chunk-correct-flash' :
-                                c.status === 'current' && flashResult === 'wrong' ? 'chunk-wrong-flash' : ''
+                            c.status === 'current' && flashResult === 'wrong' ? 'chunk-wrong-flash' : ''
                             }`}
                     >
                         {c.chunk}
@@ -46,10 +46,10 @@ const AyatDisplay: React.FC<AyatDisplayProps> = ({ engineState, chunks, flashRes
                 </div>
                 <div className="target-gesture">
                     <span className="gesture-tag zona-tag">
-                        🤚 Zona {engineState.expectedZona}
+                        Zona {engineState.expectedZona}
                     </span>
                     <span className="gesture-tag harakat-tag">
-                        ✋ Harakat {engineState.expectedHarakat}
+                        Harakat {engineState.expectedHarakat}
                     </span>
                 </div>
             </div>

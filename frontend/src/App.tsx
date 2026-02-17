@@ -71,7 +71,7 @@ const App: React.FC = () => {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>🤲 Iqro Gesture Recognition</h1>
+        <h1>Iqro Gesture Recognition</h1>
         <p>Learn Arabic letters through hand gestures</p>
       </header>
 
@@ -97,14 +97,14 @@ const App: React.FC = () => {
 
         <div className="connection-controls">
           {connectionState === 'connected' ? (
-            <button 
+            <button
               className="control-button disconnect"
               onClick={disconnect}
             >
               Disconnect
             </button>
           ) : (
-            <button 
+            <button
               className="control-button connect"
               onClick={connect}
               disabled={connectionState === 'connecting'}
