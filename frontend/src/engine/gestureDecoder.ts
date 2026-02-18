@@ -359,11 +359,6 @@ export function decodeFrame(
 
         // High X (Right of raw frame) -> LEFT Hand
         hands[1].label = 'Left';
-
-        console.debug('[GestureDecoder] Enforced position-based handedness:',
-            `hand0(x=${hands[0].wristX.toFixed(2)})=${hands[0].label}`,
-            `hand1(x=${hands[1].wristX.toFixed(2)})=${hands[1].label}`
-        );
     } else if (hands.length === 1) {
         // Single hand: Force assign based on side of screen (0.5 split)
         // x < 0.5 -> Right Hand

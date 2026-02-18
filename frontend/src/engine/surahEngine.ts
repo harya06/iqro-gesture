@@ -26,12 +26,16 @@ export class ConstrainedSurahEngine {
     private lastResult: 'idle' | 'correct' | 'wrong' | 'waiting' = 'idle';
     private lastConfirmTime: number = 0;
     private cooldownMs: number = 500; // prevent rapid-fire confirmations
+    private lastConfirmedSignature: string = '';
+
+    private waitingForRelease: boolean = false;
 
     reset(): void {
         this.currentAyat = 0;
         this.currentChunk = 0;
         this.lastResult = 'idle';
         this.lastConfirmTime = 0;
+        this.waitingForRelease = false;
     }
 
     goToAyat(ayatIndex: number): void {
@@ -39,6 +43,7 @@ export class ConstrainedSurahEngine {
             this.currentAyat = ayatIndex;
             this.currentChunk = 0;
             this.lastResult = 'idle';
+            this.waitingForRelease = false;
         }
     }
 
@@ -77,7 +82,10 @@ export class ConstrainedSurahEngine {
         const zonaInfo = ZONA_MAKHRAJ[mapping.zona];
         const harakatInfo = HARAKAT_DATA[mapping.harakat];
 
-        const hint = `Zona: ${mapping.zona} (${zonaInfo?.name || '?'}) + Harakat: ${mapping.harakat} (${harakatInfo?.name || '?'})`;
+        let hint = `Zona: ${mapping.zona} (${zonaInfo?.name || '?'}) + Harakat: ${mapping.harakat} (${harakatInfo?.name || '?'})`;
+        if (this.waitingForRelease) {
+            hint = "Lepaskan gesture / Ganti gerakan...";
+        }
 
         return {
             currentAyat: this.currentAyat,
@@ -105,6 +113,65 @@ export class ConstrainedSurahEngine {
         surahComplete: boolean;
     } {
         const now = Date.now();
+
+        // If waiting for release, we check if the gesture is *different* from expectation or unstable (stableZone is null handled by caller, but here stableZone is passed if stable)
+        // If we receive a stableZone here, it means the user is HOLDING a stable gesture.
+        // We need to check if it's the SAME as the one we just confirmed?
+        // Actually, simplest is: if waitingForRelease, we reject *everything* until the user does something else?
+        // But "stableZone" is only valid if stable.
+        // If the user maintains the SAME stable gesture, this function keeps getting called with the SAME data.
+        // So we must reject if waitingForRelease.
+        if (this.waitingForRelease) {
+            // We only clear the flag if the gesture changes significantly or becomes unstable. 
+            // Since this evaluate() is only called when STABLE, we might need a way to detect "unstable".
+            // However, the caller (AlFatihahApp) only calls evaluate() when stableZone is present.
+            // So if we are here, the user is still holding a stable gesture.
+
+            // If the current stable gesture is DIFFERENT from the target, maybe they are transitioning? 
+            // But to be safe: we require the user to BREAK the stability (i.e. caller won't call evaluate) OR match a *different* gesture.
+
+            // Wait, if the caller only calls evaluate when stable, then we can't detect "unstable" here easily unless we track time.
+            // BUT, if the user moves hands, stability is lost, and the caller STOPS calling evaluate().
+            // So, if evaluate() IS called, it means user is holding something stable.
+            // We should only proceed if the gesture does NOT match the *previous* success?
+            // No, because the next step might require the *same* gesture.
+            // So we strictly require a GAP in stability. 
+            // But we can't detect the gap here because this function isn't called during the gap.
+
+            // SOLUTION: The Engine expects the Caller to handle the "reset" of stability?
+            // No, the engine manages logic. 
+            // We can check: Is the detected gesture DIFFERENT from the one required for the *current* step?
+            // If we are waiting for release, and the user is holding the *correct* gesture for the *next* step (which happens to be the same as prev),
+            // we MUST ignore it until they break it.
+
+            // How do we know if they broke it? 
+            // We can use a timestamp. If `now` is close to `lastConfirmTime`, assume IT IS THE SAME HOLD.
+            // If `now - lastConfirmTime > 2000` (2 seconds), maybe we accept it again? No, that's annoying.
+
+            // Better: We track `lastStableZoneSignature`.
+            // If `waitingForRelease` is true:
+            //    If `currentSignature` != `lastSignature`, then Release is Done -> set waitingForRelease = false -> proceed to check.
+            //    Else (signature same), return false.
+
+            // Issue: StableZone doesn't have a unique ID, but has zona/harakat.
+            const currentSig = `${stableZone.zona}-${stableZone.harakat}`;
+            // We need to store last confirmed signature.
+            if (this.lastConfirmedSignature === currentSig) {
+                return {
+                    correct: false,
+                    chunkIndex: this.currentChunk,
+                    ayatIndex: this.currentAyat,
+                    chunk: '',
+                    shouldPlayAudio: false,
+                    ayatComplete: false,
+                    surahComplete: false
+                };
+            } else {
+                // User changed gesture to something else stable. 
+                // We consider release done.
+                this.waitingForRelease = false;
+            }
+        }
 
         // Cooldown check
         if (now - this.lastConfirmTime < this.cooldownMs) {
@@ -142,6 +209,9 @@ export class ConstrainedSurahEngine {
         if (correct) {
             this.lastResult = 'correct';
             this.lastConfirmTime = now;
+            this.waitingForRelease = true;
+            this.lastConfirmedSignature = `${stableZone.zona}-${stableZone.harakat}`;
+
             const chunkIndex = this.currentChunk;
             const ayatIndex = this.currentAyat;
 
@@ -182,6 +252,12 @@ export class ConstrainedSurahEngine {
                 surahComplete: false
             };
         }
+    }
+
+    // Called when the tracker loses stability (hands moved/lost)
+    notifyUnstable(): void {
+        this.waitingForRelease = false;
+        this.lastConfirmedSignature = '';
     }
 
     // Get all chunks for current ayat with completion status

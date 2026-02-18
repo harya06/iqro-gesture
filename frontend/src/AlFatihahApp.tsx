@@ -203,6 +203,9 @@ const AlFatihahApp = () => {
                 setEngineState(engineRef.current.getState());
                 setAyatChunks(engineRef.current.getAyatChunks());
                 stabilityRef.current.reset();
+            } else if (!stableZone) {
+                // If stability is lost, tell the engine we released
+                engineRef.current.notifyUnstable();
             }
 
             // 5) Throttled UI update (HUD)

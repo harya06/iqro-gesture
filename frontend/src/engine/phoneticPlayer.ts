@@ -6,7 +6,6 @@
 
 export class PhoneticPlayer {
     private audioContext: AudioContext | null = null;
-    private isPlaying: boolean = false;
 
     constructor() {
         this.initContext();
@@ -37,16 +36,18 @@ export class PhoneticPlayer {
         return this.audioContext;
     }
 
+    private currentSource: AudioBufferSourceNode | null = null;
+    private currentOscillators: OscillatorNode[] = [];
+
     // Play a single phonetic chunk (File -> Synthesis Fallback)
     async playChunk(chunk: string): Promise<void> {
-        if (this.isPlaying) return;
-        this.isPlaying = true;
+        // Stop any currently playing audio immediately
+        this.stopCurrentAudio();
 
         try {
             const ctx = this.ensureContext();
 
             if (ctx.state === 'suspended') {
-                console.log("AudioContext suspended, attempting resume...");
                 await ctx.resume();
             }
 
@@ -59,37 +60,51 @@ export class PhoneticPlayer {
                 if (!response.ok) throw new Error(`Status ${response.status}`);
 
                 const arrayBuffer = await response.arrayBuffer();
-                console.log(`[Audio] Fetch success: ${url} (${arrayBuffer.byteLength} bytes)`);
-
                 const audioBuffer = await ctx.decodeAudioData(arrayBuffer);
-                console.log(`[Audio] Decoded ${url}: ${audioBuffer.duration.toFixed(2)}s`);
 
                 const source = ctx.createBufferSource();
                 source.buffer = audioBuffer;
                 source.connect(ctx.destination);
+
+                source.onended = () => {
+                    if (this.currentSource === source) {
+                        this.currentSource = null;
+                    }
+                };
+
+                this.currentSource = source;
                 source.start(0);
 
-                await new Promise(resolve => {
-                    source.onended = resolve;
-                    setTimeout(resolve, (audioBuffer.duration * 1000) + 100);
-                });
             } catch (err) {
-                console.warn(`[Audio] File playback failed for ${chunk}, using synthesis. Reason:`, err);
-                this.isPlaying = false;
+                console.warn(`[Audio] File playback failed for ${chunk}, using synthesis.`);
                 await this.synthesizeChunk(chunk);
             }
         } catch (e) {
             console.error('[Audio] Fatal error:', e);
-        } finally {
-            this.isPlaying = false;
         }
     }
 
-    // Fallback synthesis logic (original implementation)
-    private async synthesizeChunk(chunk: string): Promise<void> {
-        if (this.isPlaying) return;
-        this.isPlaying = true;
+    private stopCurrentAudio() {
+        if (this.currentSource) {
+            try {
+                this.currentSource.stop();
+            } catch (e) {
+                // Ignore errors if already stopped
+            }
+            this.currentSource = null;
+        }
 
+        // Stop any active oscillators
+        this.currentOscillators.forEach(osc => {
+            try {
+                osc.stop();
+            } catch (e) { }
+        });
+        this.currentOscillators = [];
+    }
+
+    // Fallback synthesis logic
+    private async synthesizeChunk(chunk: string): Promise<void> {
         try {
             const ctx = this.ensureContext();
             const duration = this.getDuration(chunk);
@@ -99,6 +114,9 @@ export class PhoneticPlayer {
             const osc = ctx.createOscillator();
             const gainNode = ctx.createGain();
             const filter = ctx.createBiquadFilter();
+
+            // Store for cleanup
+            this.currentOscillators.push(osc);
 
             // Set up audio chain
             osc.connect(filter);
@@ -128,12 +146,19 @@ export class PhoneticPlayer {
             osc.start(ctx.currentTime);
             osc.stop(ctx.currentTime + duration);
 
+            osc.onended = () => {
+                this.currentOscillators = this.currentOscillators.filter(o => o !== osc);
+            };
+
             // Add a subtle click for consonants
             if (this.isConsonantHeavy(chunk)) {
                 const clickOsc = ctx.createOscillator();
                 const clickGain = ctx.createGain();
                 clickOsc.connect(clickGain);
                 clickGain.connect(ctx.destination);
+
+                this.currentOscillators.push(clickOsc);
+
                 clickOsc.type = 'square';
                 clickOsc.frequency.setValueAtTime(2000, ctx.currentTime);
                 clickGain.gain.setValueAtTime(0.1, ctx.currentTime);
@@ -142,9 +167,8 @@ export class PhoneticPlayer {
                 clickOsc.stop(ctx.currentTime + 0.03);
             }
 
-            await new Promise(resolve => setTimeout(resolve, duration * 1000 + 50));
-        } finally {
-            this.isPlaying = false;
+        } catch (e) {
+            console.error('Synthesis error:', e);
         }
     }
 
