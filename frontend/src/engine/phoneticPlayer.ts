@@ -28,87 +28,115 @@ export class PhoneticPlayer {
 
     private ensureContext(): AudioContext {
         if (!this.audioContext || this.audioContext.state === 'closed') {
-            this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
-        }
-        if (this.audioContext.state === 'suspended') {
-            this.audioContext.resume();
+            const AudioContextClass = (window.AudioContext || (window as any).webkitAudioContext);
+            this.audioContext = new AudioContextClass();
+            console.log(`[PhoneticPlayer] New AudioContext created: ${this.audioContext.state}`);
         }
         return this.audioContext;
     }
 
+    private currentAudioElement: HTMLAudioElement | null = null;
     private currentSource: AudioBufferSourceNode | null = null;
     private currentOscillators: OscillatorNode[] = [];
 
     // Play a single phonetic chunk (File -> Synthesis Fallback)
     async playChunk(chunk: string): Promise<void> {
-        // Stop any currently playing audio immediately
+        console.log(`[PhoneticPlayer] Attempting to play chunk: "${chunk}"`);
         this.stopCurrentAudio();
 
         try {
-            const ctx = this.ensureContext();
-
-            if (ctx.state === 'suspended') {
-                await ctx.resume();
-            }
-
-            // Sanitization
             const safeChunk = chunk.replace(/[^a-zA-Z0-9-_]/g, '').toLowerCase();
-            const url = `/audio/${safeChunk}.mp3`;
+            const url = `/audio/${safeChunk}.mp3?t=${Date.now()}`;
+            console.log(`[PhoneticPlayer] Fetching (Blob): ${url}`);
 
-            try {
-                const response = await fetch(url);
-                if (!response.ok) throw new Error(`Status ${response.status}`);
+            return new Promise(async (resolve) => {
+                let objectUrl: string | null = null;
+                try {
+                    // Fetch as blob to avoid streaming/206 issues on Linux
+                    const response = await fetch(url);
+                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
-                const arrayBuffer = await response.arrayBuffer();
-                const audioBuffer = await ctx.decodeAudioData(arrayBuffer);
+                    const blob = await response.blob();
+                    if (blob.size < 100) throw new Error("File too small, possibly empty");
 
-                const source = ctx.createBufferSource();
-                source.buffer = audioBuffer;
-                source.connect(ctx.destination);
+                    objectUrl = URL.createObjectURL(blob);
 
-                source.onended = () => {
-                    if (this.currentSource === source) {
-                        this.currentSource = null;
-                    }
-                };
+                    const audio = new Audio();
+                    this.currentAudioElement = audio;
+                    audio.src = objectUrl;
 
-                this.currentSource = source;
-                source.start(0);
+                    audio.oncanplaythrough = () => {
+                        audio.play().catch(e => {
+                            console.warn("[PhoneticPlayer] Play rejected:", e);
+                            this.synthesizeChunk(chunk).then(resolve);
+                        });
+                    };
 
-            } catch (err) {
-                console.warn(`[Audio] File playback failed for ${chunk}, using synthesis.`);
-                await this.synthesizeChunk(chunk);
-            }
+                    audio.onended = () => {
+                        if (objectUrl) URL.revokeObjectURL(objectUrl);
+                        this.currentAudioElement = null;
+                        resolve();
+                    };
+
+                    audio.onerror = () => {
+                        console.error(`[PhoneticPlayer] Blob decoder error for: ${url}`);
+                        if (objectUrl) URL.revokeObjectURL(objectUrl);
+                        this.currentAudioElement = null;
+                        this.synthesizeChunk(chunk).then(resolve);
+                    };
+
+                    // Add safety timeout
+                    setTimeout(() => {
+                        if (this.currentAudioElement === audio && audio.readyState < 2) {
+                            console.warn("[PhoneticPlayer] Blob load timeout.");
+                            if (objectUrl) URL.revokeObjectURL(objectUrl);
+                            this.currentAudioElement = null;
+                            this.synthesizeChunk(chunk).then(resolve);
+                        }
+                    }, 2500);
+
+                } catch (e) {
+                    console.error("[PhoneticPlayer] Fetch/Blob failed:", e);
+                    if (objectUrl) URL.revokeObjectURL(objectUrl);
+                    this.synthesizeChunk(chunk).then(resolve);
+                }
+            });
+
         } catch (e) {
-            console.error('[Audio] Fatal error:', e);
+            console.error('[PhoneticPlayer] Fatal error:', e);
+            await this.synthesizeChunk(chunk);
         }
     }
 
     private stopCurrentAudio() {
-        if (this.currentSource) {
+        if (this.currentAudioElement) {
             try {
-                this.currentSource.stop();
-            } catch (e) {
-                // Ignore errors if already stopped
-            }
+                this.currentAudioElement.pause();
+                this.currentAudioElement.src = ""; // Force disconnect
+                this.currentAudioElement.load();
+            } catch (e) { }
+            this.currentAudioElement = null;
+        }
+
+        if (this.currentSource) {
+            try { this.currentSource.stop(); } catch (e) { }
             this.currentSource = null;
         }
 
-        // Stop any active oscillators
         this.currentOscillators.forEach(osc => {
-            try {
-                osc.stop();
-            } catch (e) { }
+            try { osc.stop(); } catch (e) { }
         });
         this.currentOscillators = [];
     }
 
     // Fallback synthesis logic
     private async synthesizeChunk(chunk: string): Promise<void> {
+        console.log(`[PhoneticPlayer] Falling back to synthesis for: "${chunk}"`);
         try {
             const ctx = this.ensureContext();
             const duration = this.getDuration(chunk);
             const freq = this.getBaseFrequency(chunk);
+            console.log(`[PhoneticPlayer] Synthesis parameters: freq=${freq}, duration=${duration}`);
 
             // Create oscillator for the consonant
             const osc = ctx.createOscillator();
@@ -240,19 +268,20 @@ export class PhoneticPlayer {
     }
 
     private getDuration(chunk: string): number {
-        if (chunk.length >= 4) return 0.5;
-        if (chunk.includes('aa') || chunk.includes('ii') || chunk.includes('uu') || chunk.includes('oo')) return 0.4;
-        return 0.25;
+        // Increase durations so it's not just a "click"
+        if (chunk.length >= 4) return 0.8;
+        if (chunk.includes('aa') || chunk.includes('ii') || chunk.includes('uu') || chunk.includes('oo')) return 0.7;
+        return 0.5;
     }
 
     private getBaseFrequency(chunk: string): number {
         // Map different sounds to different frequency ranges
         const firstChar = chunk[0]?.toLowerCase() || 'a';
         const freqMap: Record<string, number> = {
-            'a': 220, 'b': 196, 'd': 185, 'g': 175, 'h': 247,
-            'i': 330, 'k': 200, 'l': 262, 'm': 196, 'n': 294,
-            'q': 165, 'r': 233, 's': 350, 't': 277, 'w': 208,
-            'y': 311, 'u': 261, 'o': 240
+            'a': 220, 'b': 200, 'd': 190, 'g': 180, 'h': 240,
+            'i': 300, 'k': 210, 'l': 260, 'm': 200, 'n': 280,
+            'q': 170, 'r': 230, 's': 330, 't': 270, 'w': 210,
+            'y': 300, 'u': 260, 'o': 240
         };
         return freqMap[firstChar] || 220;
     }
@@ -275,6 +304,10 @@ export class PhoneticPlayer {
 
     private isConsonantHeavy(chunk: string): boolean {
         return ['b', 'd', 't', 'k', 'q', 'g'].some(c => chunk.startsWith(c));
+    }
+
+    getContextState(): string {
+        return this.audioContext?.state || 'closed';
     }
 
     destroy(): void {

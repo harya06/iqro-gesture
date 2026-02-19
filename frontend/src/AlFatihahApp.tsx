@@ -65,6 +65,7 @@ const AlFatihahApp = () => {
     const [ayatChunks, setAyatChunks] = useState(engineRef.current.getAyatChunks());
     const [surahComplete, setSurahComplete] = useState(false);
     const [wrongCount, setWrongCount] = useState(0);
+    const [audioLog, setAudioLog] = useState<string>('Audio: Ready');
 
     // ── Draw hands directly on canvas (no React involvement) ─────
     // ── Draw hands using DECODED data for 100% consistency ─────
@@ -177,11 +178,15 @@ const AlFatihahApp = () => {
 
                 if (result.correct) {
                     setFlashResult('correct');
+                    setAudioLog(`Playing: ${result.chunk}`);
                     playerRef.current.playChunk(result.chunk);
                     setTimeout(() => setFlashResult(null), 600);
 
                     if (result.ayatComplete) {
-                        setTimeout(() => playerRef.current.playAyatComplete(), 300);
+                        setTimeout(() => {
+                            setAudioLog(`Ayat Complete!`);
+                            playerRef.current.playAyatComplete();
+                        }, 300);
                     }
                     if (result.surahComplete) {
                         setSurahComplete(true);
@@ -190,6 +195,7 @@ const AlFatihahApp = () => {
                 } else if (result.chunk) {
                     // Only flash wrong if we have a stable gesture but it doesn't match
                     setFlashResult('wrong');
+                    setAudioLog(`Error: Wrong Gesture`);
                     playerRef.current.playError();
                     setTimeout(() => setFlashResult(null), 600);
                     setWrongCount(prev => {
@@ -213,6 +219,15 @@ const AlFatihahApp = () => {
                 lastUIUpdateTime.current = now;
                 setDecodedGesture({ ...decoded });
                 setStabilityProgress({ ...latestStabilityRef.current });
+
+                // Keep audio context state updated in log
+                const ctxState = playerRef.current.getContextState();
+                if (ctxState === 'suspended' || ctxState === 'closed') {
+                    setAudioLog(`Audio: ${ctxState.toUpperCase()} (Click anywhere)`);
+                } else if (audioLog.includes('SUSPENDED')) {
+                    // Audio is now active, clear the suspended message to hide overlay
+                    setAudioLog('Audio: ACTIVE');
+                }
             }
         };
     }); // No deps = runs every render to capture fresh closures
@@ -432,6 +447,18 @@ const AlFatihahApp = () => {
                         <span className="mode-dot"></span>
                         Training Mode
                     </div>
+                    <button
+                        className="btn-primary"
+                        style={{ padding: '4px 12px', fontSize: '0.8rem' }}
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            playerRef.current.start().then(() => {
+                                playerRef.current.playChunk('bis');
+                            });
+                        }}
+                    >
+                        🔊 Test Audio
+                    </button>
                     {mediapipeReady && <div className="fps-badge">{fps} FPS</div>}
                 </div>
             </header>
@@ -524,6 +551,28 @@ const AlFatihahApp = () => {
                         <button className="btn-primary" onClick={handleReset}>
                             Ulangi dari Awal
                         </button>
+                    </div>
+                </div>
+            )}
+
+            {/* Audio Debug Overlay */}
+            <div className="audio-debug-overlay">
+                {audioLog}
+            </div>
+
+            {/* Audio Wake-up Overlay (Only shows when suspended) */}
+            {audioLog.includes('SUSPENDED') && (
+                <div
+                    className="audio-wakeup-overlay"
+                    onClick={async () => {
+                        await playerRef.current.start();
+                        setAudioLog('Audio: ACTIVE');
+                    }}
+                >
+                    <div className="wakeup-content">
+                        <div className="wakeup-icon">🔊</div>
+                        <h3>Klik di mana saja untuk mengaktifkan suara</h3>
+                        <p>Browser memerlukan interaksi pertama untuk memutar audio.</p>
                     </div>
                 </div>
             )}
