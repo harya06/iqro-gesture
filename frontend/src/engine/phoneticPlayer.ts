@@ -39,71 +39,58 @@ export class PhoneticPlayer {
     private currentSource: AudioBufferSourceNode | null = null;
     private currentOscillators: OscillatorNode[] = [];
 
+    private audioBufferCache: Map<string, AudioBuffer> = new Map();
+
     // Play a single phonetic chunk (File -> Synthesis Fallback)
     async playChunk(chunk: string): Promise<void> {
         console.log(`[PhoneticPlayer] Attempting to play chunk: "${chunk}"`);
         this.stopCurrentAudio();
 
+        const ctx = this.ensureContext();
+        if (ctx.state === 'suspended') {
+            await ctx.resume();
+        }
+
         try {
             const safeChunk = chunk.replace(/[^a-zA-Z0-9-_]/g, '').toLowerCase();
             const url = `/audio/${safeChunk}.mp3?t=${Date.now()}`;
-            console.log(`[PhoneticPlayer] Fetching (Blob): ${url}`);
 
-            return new Promise(async (resolve) => {
-                let objectUrl: string | null = null;
-                try {
-                    // Fetch as blob to avoid streaming/206 issues on Linux
-                    const response = await fetch(url);
-                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            // Check cache first
+            let buffer = this.audioBufferCache.get(safeChunk);
 
-                    const blob = await response.blob();
-                    if (blob.size < 100) throw new Error("File too small, possibly empty");
+            if (!buffer) {
+                console.log(`[PhoneticPlayer] Fetching and decoding: ${url}`);
+                const response = await fetch(url);
+                if (!response.ok) {
+                    console.error(`[PhoneticPlayer] Fetch failed for ${url}: ${response.status} ${response.statusText}`);
+                    throw new Error(`HTTP ${response.status}`);
+                }
 
-                    objectUrl = URL.createObjectURL(blob);
+                const arrayBuffer = await response.arrayBuffer();
+                console.log(`[PhoneticPlayer] Successfully fetched ${arrayBuffer.byteLength} bytes for ${safeChunk}`);
+                buffer = await ctx.decodeAudioData(arrayBuffer);
+                this.audioBufferCache.set(safeChunk, buffer);
+            }
 
-                    const audio = new Audio();
-                    this.currentAudioElement = audio;
-                    audio.src = objectUrl;
+            if (buffer) {
+                console.log(`[PhoneticPlayer] Starting playback for ${safeChunk}`);
+                const source = ctx.createBufferSource();
+                source.buffer = buffer;
+                source.connect(ctx.destination);
+                this.currentSource = source;
 
-                    audio.oncanplaythrough = () => {
-                        audio.play().catch(e => {
-                            console.warn("[PhoneticPlayer] Play rejected:", e);
-                            this.synthesizeChunk(chunk).then(resolve);
-                        });
-                    };
-
-                    audio.onended = () => {
-                        if (objectUrl) URL.revokeObjectURL(objectUrl);
-                        this.currentAudioElement = null;
+                return new Promise((resolve) => {
+                    source.onended = () => {
+                        this.currentSource = null;
                         resolve();
                     };
-
-                    audio.onerror = () => {
-                        console.error(`[PhoneticPlayer] Blob decoder error for: ${url}`);
-                        if (objectUrl) URL.revokeObjectURL(objectUrl);
-                        this.currentAudioElement = null;
-                        this.synthesizeChunk(chunk).then(resolve);
-                    };
-
-                    // Add safety timeout
-                    setTimeout(() => {
-                        if (this.currentAudioElement === audio && audio.readyState < 2) {
-                            console.warn("[PhoneticPlayer] Blob load timeout.");
-                            if (objectUrl) URL.revokeObjectURL(objectUrl);
-                            this.currentAudioElement = null;
-                            this.synthesizeChunk(chunk).then(resolve);
-                        }
-                    }, 2500);
-
-                } catch (e) {
-                    console.error("[PhoneticPlayer] Fetch/Blob failed:", e);
-                    if (objectUrl) URL.revokeObjectURL(objectUrl);
-                    this.synthesizeChunk(chunk).then(resolve);
-                }
-            });
+                    source.start(0);
+                });
+            }
 
         } catch (e) {
-            console.error('[PhoneticPlayer] Fatal error:', e);
+            console.error('[PhoneticPlayer] Playback via WebAudio failed:', e);
+            // Fallback to synthesis
             await this.synthesizeChunk(chunk);
         }
     }
@@ -131,9 +118,10 @@ export class PhoneticPlayer {
 
     // Fallback synthesis logic
     private async synthesizeChunk(chunk: string): Promise<void> {
-        console.log(`[PhoneticPlayer] Falling back to synthesis for: "${chunk}"`);
+        console.warn(`[PhoneticPlayer] Falling back to synthesis for: "${chunk}"`);
         try {
             const ctx = this.ensureContext();
+            if (ctx.state === 'suspended') await ctx.resume();
             const duration = this.getDuration(chunk);
             const freq = this.getBaseFrequency(chunk);
             console.log(`[PhoneticPlayer] Synthesis parameters: freq=${freq}, duration=${duration}`);

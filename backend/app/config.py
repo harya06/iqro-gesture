@@ -38,7 +38,7 @@ class Settings(BaseSettings):
     CONFIDENCE_THRESHOLD: float = 0.5
     
     # TTS
-    TTS_LANGUAGE: str = "ar"
+    TTS_LANGUAGE: str = "id"
     TTS_ENABLED: bool = True
     
     # CORS
@@ -66,21 +66,19 @@ class Settings(BaseSettings):
         "Jim": "جِيم"
     }
     ARABIC_PRONUNCIATION: dict = {
-        # Defaults to label name for Al-Fatihah if not found
-        "Alif": "ألف",
-        "Ba": "باء",
-        "Ta": "تاء",
-        "Tsa": "ثاء",
-        "Jim": "جيم",
-        # Al-Fatihah Chunks
-        "bis": "بِسْمِ", "mil": "اللَّهِ", "lah": "اللَّهِ", 
-        "hir": "الرَّحْمَٰنِ", "rah": "الرَّحْمَٰنِ", "maa": "مَٰلِكِ", 
-        "nir": "الرَّحِيمِ", "ra": "الرَّحِيمِ", "hiim": "الرَّحِيمِ",
-        "al": "الْحَمْدُ", "ham": "الْحَمْدُ", "du": "الْحَمْدُ", 
-        "lil": "لِلَّهِ", "rab": "رَبِّ", "bil": "الْعَالَمِينَ", 
-        "aa": "الْعَالَمِينَ", "la": "الْعَالَمِينَ", "miin": "الْعَالَمِينَ",
-        "ar": "الرَّحْمَٰنِ", "li": "مَٰلِكِ", "ki": "يَوْمِ", 
-        "yaw": "يَوْمِ", "mi": "يَوْمِ", "dii": "الدِّينِ", "ni": "الدِّينِ"
+        # Hijaiyah (keep Arabic for these)
+        "Alif": "Alif",
+        "Ba": "Ba",
+        "Ta": "Ta",
+        "Tsa": "Tsa",
+        "Jim": "Jim",
+        # Al-Fatihah Chunks will use their labels directly as Indonesian phonetics
+        # If any specific chunk needs special spelling for ID TTS, add here:
+        "mil": "mil", 
+        "lah": "lah",
+        "hiim": "him",
+        "miin": "min",
+        "qiim": "qim"
     }
     
     class Config:
